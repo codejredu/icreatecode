@@ -1,27 +1,22 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
+import react from '@vitejs/plugin-react';
 import path from 'path';
-import { fileURLToPath } from 'url';
-
-// התאמת __dirname לעולם המודרני של ES Modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    // הגדרת בסיס קריטית עבור GitHub Pages
-    base: '/icreatecode/', 
-    
+    base: './',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, './src'), // נהוג לקשר את @ לתיקיית src לפיתוח נוח
+        '@': path.resolve(__dirname, '.'),
       },
     },
     server: {
-      // הגדרות המנוע של AI Studio למניעת הבהובים
+      // HMR is disabled in AI Studio via DISABLE_HMR env var.
+      // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',
+      // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
     },
   };
