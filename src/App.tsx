@@ -147,7 +147,7 @@ export default function App() {
                     ].map((item, index) => (
                       <div key={index} className="border-r border-b border-slate-200 bg-white flex flex-col items-center justify-between">
                         <div className="flex-1 flex items-center justify-center p-4">
-                          {item.img && <img src={item.img} alt={item.name} className="max-w-[150px] max-h-[150px] object-contain border-0 shadow-none my-0" />}
+                          {item.img && <img src={item.img.startsWith('/') ? `https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images${item.img}` : item.img} alt={item.name} className="max-w-[150px] max-h-[150px] object-contain border-0 shadow-none my-0" referrerPolicy="no-referrer" />}
                         </div>
                         <div className="w-full text-center p-3 bg-slate-50 border-t border-slate-200 text-sm font-medium text-slate-700 min-h-[48px] flex items-center justify-center">
                           {item.name}
@@ -238,13 +238,13 @@ export default function App() {
                       <tbody>
                         <tr className="border-b border-[#e1e4e5] bg-white">
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="/1_Page9_Image1.jpg" alt="micro:bit Smart Hub" className="max-w-[75%] inline-block m-0" />
+                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image1.jpg" alt="micro:bit Smart Hub" className="max-w-[75%] inline-block m-0" referrerPolicy="no-referrer" />
                           </td>
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="/1_Page9_Image25.jpg" alt="Button Sensor" className="max-w-[75%] inline-block m-0" />
+                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image25.jpg" alt="Button Sensor" className="max-w-[75%] inline-block m-0" referrerPolicy="no-referrer" />
                           </td>
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="/1_Page9_Image30.jpg" alt="Grove Cables" className="max-w-[75%] inline-block m-0" />
+                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image30.jpg" alt="Grove Cables" className="max-w-[75%] inline-block m-0" referrerPolicy="no-referrer" />
                           </td>
                         </tr>
                         <tr className="border-b border-[#e1e4e5] bg-[#f3f6f6]">
@@ -254,10 +254,10 @@ export default function App() {
                         </tr>
                         <tr className="border-b border-[#e1e4e5] bg-white">
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="/1_Page9_Image8.jpg" alt="Fan Module" className="max-w-[75%] inline-block m-0" />
+                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image8.jpg" alt="Fan Module" className="max-w-[75%] inline-block m-0" referrerPolicy="no-referrer" />
                           </td>
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="/1_Page9_Image13.jpg" alt="Red LED" className="max-w-[75%] inline-block m-0" />
+                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image13.jpg" alt="Red LED" className="max-w-[75%] inline-block m-0" referrerPolicy="no-referrer" />
                           </td>
                           <td className="p-3 border border-[#e1e4e5]"></td>
                         </tr>
@@ -277,13 +277,13 @@ export default function App() {
                       <tbody>
                         <tr className="border-b border-[#e1e4e5] bg-white">
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="/PowerOn.jpg" alt="Power on" className="max-w-[85%] inline-block m-0" />
+                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/PowerOn.jpg" alt="Power on" className="max-w-[85%] inline-block m-0" referrerPolicy="no-referrer" />
                           </td>
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="/BatteryIndicator.jpg" alt="Battery indicator" className="max-w-[85%] inline-block m-0" />
+                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/BatteryIndicator.jpg" alt="Battery indicator" className="max-w-[85%] inline-block m-0" referrerPolicy="no-referrer" />
                           </td>
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="/ChargingPort.jpg" alt="Charging port" className="max-w-[85%] inline-block m-0" />
+                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/ChargingPort.jpg" alt="Charging port" className="max-w-[85%] inline-block m-0" referrerPolicy="no-referrer" />
                           </td>
                         </tr>
                         <tr className="border-b border-[#e1e4e5] bg-[#f3f6f6]">
@@ -430,6 +430,13 @@ export default function App() {
                         );
                       }
                       return <a href={href} target="_blank" rel="noopener noreferrer" {...props}>{children}</a>;
+                    },
+                    img: ({node, src, alt, ...props}) => {
+                      let resolvedSrc = src;
+                      if (src && src.startsWith('/')) {
+                        resolvedSrc = `https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images${src}`;
+                      }
+                      return <img src={resolvedSrc} alt={alt} className="max-w-full my-4 rounded-lg shadow-sm border border-slate-100 animate-fade-in" referrerPolicy="no-referrer" {...props} />;
                     }
                   }}
                 >
