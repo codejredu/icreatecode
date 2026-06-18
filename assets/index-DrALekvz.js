@@ -178,21 +178,21 @@ Error generating stack: `+i.message+`
 
 | | | | |
 |:---:|:---:|:---:|:---:|
-| ![Microbit Hub](/1_Page9_Image1.jpg) | ![Servo Motor](/1_Page9_Image2.jpg) | ![DC Motor](/1_Page9_Image3.jpg) | ![Geek Servo](/1_Page9_Image4.jpg) |
+| ![Microbit Hub](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image1.jpg) | ![Servo Motor](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image2.jpg) | ![DC Motor](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image3.jpg) | ![Geek Servo](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image4.jpg) |
 | micro:bit Smart Hub | Servo Motor | DC Motor | Geek Servo |
-| ![Potentiometer](/1_Page9_Image5.jpg) | ![Joystick](/1_Page9_Image6.jpg) | ![RGB LED](/1_Page9_Image7.jpg) | ![Fan](/1_Page9_Image8.jpg) |
+| ![Potentiometer](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image5.jpg) | ![Joystick](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image6.jpg) | ![RGB LED](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image7.jpg) | ![Fan](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image8.jpg) |
 | Potentiometer Module | Joystick Module | RGB LED Module | Fan Module |
-| ![Recording](/1_Page9_Image9.jpg) | ![OLED](/1_Page9_Image10.jpg) | ![Laser](/1_Page9_Image11.jpg) | ![Electromagnet](/1_Page9_Image12.jpg) |
+| ![Recording](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image9.jpg) | ![OLED](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image10.jpg) | ![Laser](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image11.jpg) | ![Electromagnet](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image12.jpg) |
 | Recording Module | OLED Module | Laser Module | Electromagnet Module |
-| ![Red LED](/1_Page9_Image13.jpg) | ![Yellow LED](/1_Page9_Image14.jpg) | ![Blue LED](/1_Page9_Image15.jpg) | ![Green LED](/1_Page9_Image16.jpg) |
+| ![Red LED](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image13.jpg) | ![Yellow LED](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image14.jpg) | ![Blue LED](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image15.jpg) | ![Green LED](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image16.jpg) |
 | Red LED Module | Yellow LED Module | Blue LED Module | Green LED Module |
-| ![Ultrasonic](/1_Page9_Image17.jpg) | ![Gas](/1_Page9_Image18.jpg) | ![PIR](/1_Page9_Image19.jpg) | ![Temperature](/1_Page9_Image20.jpg) |
+| ![Ultrasonic](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image17.jpg) | ![Gas](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image18.jpg) | ![PIR](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image19.jpg) | ![Temperature](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image20.jpg) |
 | Ultrasonic Sensor | MQ-2 Gas Sensor | PIR Sensor | Temperature Sensor |
-| ![Flame](/1_Page9_Image21.jpg) | ![Hall](/1_Page9_Image22.jpg) | ![Grayscale](/1_Page9_Image23.jpg) | ![Photosensitive](/1_Page9_Image24.jpg) |
+| ![Flame](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image21.jpg) | ![Hall](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image22.jpg) | ![Grayscale](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image23.jpg) | ![Photosensitive](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image24.jpg) |
 | Flame Sensor | Hall Sensor | Grayscale Sensor | Photosensitive Sensor |
-| ![Button](/1_Page9_Image25.jpg) | ![Soil Moisture](/1_Page9_Image26.jpg) | ![Water Level](/1_Page9_Image27.jpg) | ![Long-Range Photoelectric](/1_Page9_Image28.jpg) |
+| ![Button](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image25.jpg) | ![Soil Moisture](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image26.jpg) | ![Water Level](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image27.jpg) | ![Long-Range Photoelectric](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image28.jpg) |
 | Button Sensor | Soil Moisture Sensor | Water Level Sensor | Long-Range Photoelectric Sensor |
-| ![Six way Color](/1_Page9_Image29.jpg) | | ![Grove Cable](/1_Page9_Image30.jpg) | ![Grove Male-to-Female Cable](/1_Page9_Image31.jpg) |
+| ![Six way Color](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image29.jpg) | | ![Grove Cable](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image30.jpg) | ![Grove Male-to-Female Cable](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image31.jpg) |
 | Six way Color&Gray Sensor | | Grove Cable | Grove Male-to-Female Cable |
 
 > התמונות מציגות את המודולים והחיישנים הכלולים בערכה.
@@ -232,8 +232,7 @@ Error generating stack: `+i.message+`
 | Water Level Sensor | 1 | 1 | — | — |
 | Long-range Photoelectric Sensor | 1 | 1 | — | — |
 | Grove Cable | 10 | 10 | 10 | 10 |
-| Grove Male-to-Female Cable | 10 | 10 | 10 | — |
-`}]},{id:"getting-started",title:"2. התחלה מהירה",chapters:[{id:"quick-start",title:"2. התחלה מהירה",icon:$4,content:`# 2. התחלה מהירה
+| Grove Male-to-Female Cable | 10 | 10 | 10 | — |`}]},{id:"getting-started",title:"2. התחלה מהירה",chapters:[{id:"quick-start",title:"2. התחלה מהירה",icon:$4,content:`# 2. התחלה מהירה
 
 ### השגת התוכנה
 
