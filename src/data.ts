@@ -1,4 +1,4 @@
- import { BookOpen, Cpu, Wrench, Settings, Search, AlertTriangle, FileText, CheckCircle, Package, Zap } from 'lucide-react';
+import { BookOpen, Cpu, Wrench, Settings, Search, AlertTriangle, FileText, CheckCircle, Package, Zap } from 'lucide-react';
 
 export type Chapter = {
   id: string;
