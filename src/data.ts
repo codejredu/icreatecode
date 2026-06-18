@@ -1,4 +1,4 @@
-import { BookOpen, Cpu, Wrench, Settings, Search, AlertTriangle, FileText, CheckCircle, Package, Zap } from 'lucide-react';
+ import { BookOpen, Cpu, Wrench, Settings, Search, AlertTriangle, FileText, CheckCircle, Package, Zap } from 'lucide-react';
 
 export type Chapter = {
   id: string;
@@ -31,7 +31,65 @@ export const sections: Section[] = [
         id: "intro-parts", 
         title: "1.2 רשימת חלקים", 
         icon: Package,
-        content: `# 1.2 רשימת חלקים\n\n| | | | |\n|:---:|:---:|:---:|:---:|\n| ![Microbit Hub](/1_Page9_Image1.jpg) | ![Servo Motor](/1_Page9_Image2.jpg) | ![DC Motor](/1_Page9_Image3.jpg) | ![Geek Servo](/1_Page9_Image4.jpg) |\n| micro:bit Smart Hub | Servo Motor | DC Motor | Geek Servo |\n| ![Potentiometer](/1_Page9_Image5.jpg) | ![Joystick](/1_Page9_Image6.jpg) | ![RGB LED](/1_Page9_Image7.jpg) | ![Fan](/1_Page9_Image8.jpg) |\n| Potentiometer Module | Joystick Module | RGB LED Module | Fan Module |\n| ![Recording](/1_Page9_Image9.jpg) | ![OLED](/1_Page9_Image10.jpg) | ![Laser](/1_Page9_Image11.jpg) | ![Electromagnet](/1_Page9_Image12.jpg) |\n| Recording Module | OLED Module | Laser Module | Electromagnet Module |\n| ![Red LED](/1_Page9_Image13.jpg) | ![Yellow LED](/1_Page9_Image14.jpg) | ![Blue LED](/1_Page9_Image15.jpg) | ![Green LED](/1_Page9_Image16.jpg) |\n| Red LED Module | Yellow LED Module | Blue LED Module | Green LED Module |\n| ![Ultrasonic](/1_Page9_Image17.jpg) | ![Gas](/1_Page9_Image18.jpg) | ![PIR](/1_Page9_Image19.jpg) | ![Temperature](/1_Page9_Image20.jpg) |\n| Ultrasonic Sensor | MQ-2 Gas Sensor | PIR Sensor | Temperature Sensor |\n| ![Flame](/1_Page9_Image21.jpg) | ![Hall](/1_Page9_Image22.jpg) | ![Grayscale](/1_Page9_Image23.jpg) | ![Photosensitive](/1_Page9_Image24.jpg) |\n| Flame Sensor | Hall Sensor | Grayscale Sensor | Photosensitive Sensor |\n| ![Button](/1_Page9_Image25.jpg) | ![Soil Moisture](/1_Page9_Image26.jpg) | ![Water Level](/1_Page9_Image27.jpg) | ![Long-Range Photoelectric](/1_Page9_Image28.jpg) |\n| Button Sensor | Soil Moisture Sensor | Water Level Sensor | Long-Range Photoelectric Sensor |\n| ![Six way Color](/1_Page9_Image29.jpg) | | ![Grove Cable](/1_Page9_Image30.jpg) | ![Grove Male-to-Female Cable](/1_Page9_Image31.jpg) |\n| Six way Color&Gray Sensor | | Grove Cable | Grove Male-to-Female Cable |\n\n> התמונות מציגות את המודולים והחיישנים הכלולים בערכה.\n> \n> אנא התייחסו למוצר בפועל עבור התמונות המדויקות.\n\n# 1.3 רשימת הרכיבים האלקטרוניים בערכה\n\n| פריט | AI Coding Set | AI Super Set | Smart Home Set | Base Set |\n|:---|:---:|:---:|:---:|:---:|\n| micro:bit Smart Hub | 1 | 1 | 1 | 1 |\n| Servo Motor | — | 2 | — | — |\n| DC Motor | 4 | — | 4 | — |\n| Geek Servo | 2 | 2 | 2 | — |\n| Potentiometer Module | 1 | 1 | 1 | — |\n| Joystick Module | — | 1 | — | 1 |\n| RGB LED Ring Module | 1 | 1 | — | — |\n| Fan Module | 1 | 1 | — | — |\n| Recording Module | — | 1 | — | — |\n| OLED Module | 1 | 1 | 1 | — |\n| Laser Module | 1 | 1 | 1 | — |\n| Electromagnet Module | 1 | 1 | — | — |\n| Red LED Module | 1 | 1 | 1 | — |\n| Yellow LED Module | 1 | 1 | 1 | — |\n| Blue LED Module | 1 | 1 | 1 | — |\n| Green LED Module | 1 | 1 | 1 | — |\n| Ultrasonic Sensor | 1 | 1 | 1 | — |\n| MQ-2 Gas Sensor | 1 | 1 | — | — |\n| PIR Sensor | — | 1 | — | — |\n| Temperature Sensor | 1 | 1 | — | — |\n| Flame Sensor | 1 | 1 | — | — |\n| Hall Sensor | 1 | 1 | 1 | — |\n| Grayscale Sensor | 2 | 2 | 2 | — |\n| Photosensitive Sensor | 1 | 1 | — | — |\n| Button Sensor | 1 | 1 | 1 | 3 |\n| Soil Humidity Sensor | 1 | 1 | — | — |\n| Water Level Sensor | 1 | 1 | — | — |\n| Long-range Photoelectric Sensor | 1 | 1 | — | — |\n| Grove Cable | 10 | 10 | 10 | 10 |\n| Grove Male-to-Female Cable | 10 | 10 | 10 | — |\n` 
+        content: `# 1.2 רשימת חלקים
+
+| | | | |
+|:---:|:---:|:---:|:---:|
+| ![Microbit Hub](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image1.jpg) | ![Servo Motor](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image2.jpg) | ![DC Motor](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image3.jpg) | ![Geek Servo](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image4.jpg) |
+| micro:bit Smart Hub | Servo Motor | DC Motor | Geek Servo |
+| ![Potentiometer](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image5.jpg) | ![Joystick](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image6.jpg) | ![RGB LED](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image7.jpg) | ![Fan](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image8.jpg) |
+| Potentiometer Module | Joystick Module | RGB LED Module | Fan Module |
+| ![Recording](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image9.jpg) | ![OLED](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image10.jpg) | ![Laser](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image11.jpg) | ![Electromagnet](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image12.jpg) |
+| Recording Module | OLED Module | Laser Module | Electromagnet Module |
+| ![Red LED](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image13.jpg) | ![Yellow LED](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image14.jpg) | ![Blue LED](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image15.jpg) | ![Green LED](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image16.jpg) |
+| Red LED Module | Yellow LED Module | Blue LED Module | Green LED Module |
+| ![Ultrasonic](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image17.jpg) | ![Gas](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image18.jpg) | ![PIR](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image19.jpg) | ![Temperature](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image20.jpg) |
+| Ultrasonic Sensor | MQ-2 Gas Sensor | PIR Sensor | Temperature Sensor |
+| ![Flame](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image21.jpg) | ![Hall](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image22.jpg) | ![Grayscale](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image23.jpg) | ![Photosensitive](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image24.jpg) |
+| Flame Sensor | Hall Sensor | Grayscale Sensor | Photosensitive Sensor |
+| ![Button](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image25.jpg) | ![Soil Moisture](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image26.jpg) | ![Water Level](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image27.jpg) | ![Long-Range Photoelectric](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image28.jpg) |
+| Button Sensor | Soil Moisture Sensor | Water Level Sensor | Long-Range Photoelectric Sensor |
+| ![Six way Color](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image29.jpg) | | ![Grove Cable](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image30.jpg) | ![Grove Male-to-Female Cable](https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image31.jpg) |
+| Six way Color&Gray Sensor | | Grove Cable | Grove Male-to-Female Cable |
+
+> התמונות מציגות את המודולים והחיישנים הכלולים בערכה.
+> 
+> אנא התייחסו למוצר בפועל עבור התמונות המדויקות.
+
+# 1.3 רשימת הרכיבים האלקטרוניים בערכה
+
+| פריט | AI Coding Set | AI Super Set | Smart Home Set | Base Set |
+|:---|:---:|:---:|:---:|:---:|
+| micro:bit Smart Hub | 1 | 1 | 1 | 1 |
+| Servo Motor | — | 2 | — | — |
+| DC Motor | 4 | — | 4 | — |
+| Geek Servo | 2 | 2 | 2 | — |
+| Potentiometer Module | 1 | 1 | 1 | — |
+| Joystick Module | — | 1 | — | 1 |
+| RGB LED Ring Module | 1 | 1 | — | — |
+| Fan Module | 1 | 1 | — | — |
+| Recording Module | — | 1 | — | — |
+| OLED Module | 1 | 1 | 1 | — |
+| Laser Module | 1 | 1 | 1 | — |
+| Electromagnet Module | 1 | 1 | — | — |
+| Red LED Module | 1 | 1 | 1 | — |
+| Yellow LED Module | 1 | 1 | 1 | — |
+| Blue LED Module | 1 | 1 | 1 | — |
+| Green LED Module | 1 | 1 | 1 | — |
+| Ultrasonic Sensor | 1 | 1 | 1 | — |
+| MQ-2 Gas Sensor | 1 | 1 | — | — |
+| PIR Sensor | — | 1 | — | — |
+| Temperature Sensor | 1 | 1 | — | — |
+| Flame Sensor | 1 | 1 | — | — |
+| Hall Sensor | 1 | 1 | 1 | — |
+| Grayscale Sensor | 2 | 2 | 2 | — |
+| Photosensitive Sensor | 1 | 1 | — | — |
+| Button Sensor | 1 | 1 | 1 | 3 |
+| Soil Humidity Sensor | 1 | 1 | — | — |
+| Water Level Sensor | 1 | 1 | — | — |
+| Long-range Photoelectric Sensor | 1 | 1 | — | — |
+| Grove Cable | 10 | 10 | 10 | 10 |
+| Grove Male-to-Female Cable | 10 | 10 | 10 | — |`
       }
     ]
   },
