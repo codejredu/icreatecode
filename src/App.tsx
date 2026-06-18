@@ -1,4 +1,4 @@
-/**
+ /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -306,7 +306,7 @@ export default function App() {
                   </p>
 
                   <div className="mb-4 text-center">
-                    <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/09QuickStart.png" alt="Connection" className="mx-auto max-w-full inline-block m-0" />
+                    <img src="/1_Page9_Image1.jpg" alt="Connection" className="mx-auto max-w-full inline-block m-0" />
                   </div>
 
                   <p className="mb-10 text-[#404040]">
@@ -327,7 +327,7 @@ export default function App() {
                     היכנסו לקישור לעיל כדי לגשת לפלטפורמת התכנות המקוונת, שם תראו את הממשק הראשי כפי שמוצג למטה.
                   </p>
                   <div className="mb-4">
-                    <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/10QuickStart.png" alt="MakeCode Platform" className="max-w-[800px] w-full mx-auto" />
+                    <img src="/1_Page11_Image1.jpg" alt="MakeCode Platform" className="max-w-[800px] w-full mx-auto" />
                   </div>
 
                   <h3 className="text-[19px] font-bold mb-4 mt-8 text-[#0d0d0d]">השגת ההרחבה (Get the Extension)</h3>
@@ -340,37 +340,37 @@ export default function App() {
                     בצעו את השלבים הבאים כדי להוסיף את <strong>הרחבת ה-micro:bit</strong> לפלטפורמת <strong>MakeCode</strong>:
                   </p>
                   <p className="mb-2 font-bold text-[#0d0d0d]">שלב 1:</p>
-                  <p className="mb-4"><img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/11QuickStart.png" alt="Step 1" className="max-w-[800px] w-full" /></p>
+                  <p className="mb-4"><img src="/1_Page11_Image2.jpg" alt="Step 1" className="max-w-[800px] w-full" /></p>
                   <p className="mb-2 font-bold text-[#0d0d0d]">שלב 2:</p>
-                  <p className="mb-4"><img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/12QuickStart.png" alt="Step 2" className="max-w-[800px] w-full" /></p>
+                  <p className="mb-4"><img src="/1_Page11_Image3.jpg" alt="Step 2" className="max-w-[800px] w-full" /></p>
                   <p className="mb-2 font-bold text-[#0d0d0d]">שלב 3:</p>
-                  <p className="mb-4"><img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/13QuickStart.png" alt="Step 3" className="max-w-[800px] w-full" /></p>
+                  <p className="mb-4"><img src="/1_Page11_Image4.jpg" alt="Step 3" className="max-w-[800px] w-full" /></p>
                   <p className="mb-2 font-bold text-[#0d0d0d]">שלב 4:</p>
-                  <p className="mb-4"><img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/14QuickStart.png" alt="Step 4" className="max-w-[800px] w-full" /></p>
+                  <p className="mb-4"><img src="/1_Page11_Image5.jpg" alt="Step 4" className="max-w-[800px] w-full" /></p>
                   <p className="mb-2 font-bold text-[#0d0d0d]">שלב 5:</p>
-                  <p className="mb-4"><img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/15QuickStart.png" alt="Step 5" className="max-w-[800px] w-full" /></p>
+                  <p className="mb-4"><img src="/1_Page11_Image6.jpg" alt="Step 5" className="max-w-[800px] w-full" /></p>
                   
                   <p className="mb-4 text-[#404040]">התהליך הכללי להוספת הרחבה הוא כדלקמן:</p>
-                  <p className="mb-4"><img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/16QuickStart.gif" alt="gif" className="max-w-[800px] w-full" /></p>
+                  <p className="mb-4"><img src="/1_Page11_Image7.jpg" alt="gif" className="max-w-[800px] w-full" /></p>
                   <p className="mb-10 text-[#404040]">
                     לאחר השלמת שלבים אלו, ההרחבה תתווסף בהצלחה.
                   </p>
 
                   <h3 className="text-[19px] font-bold mb-4 mt-8 text-[#0d0d0d]">התחלת קידוד (Start Coding)</h3>
                   <p className="mb-4 text-[#404040]">כעת, בואו נכתוב תוכנית דוגמה בפלטפורמת התכנות.</p>
-                  <p className="mb-4"><img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/17QuickStart.png" alt="Program logic" className="max-w-[600px] w-full" /></p>
+                  <p className="mb-4"><img src="/1_Page11_Image8.jpg" alt="Program logic" className="max-w-[600px] w-full" /></p>
                   <p className="mb-4 text-[#404040]">
                     תוכנית זו תאפשר למאוורר ולנורית ה-LED האדומה להידלק כאשר הכפתור נלחץ, ולהיכבות כאשר הכפתור משוחרר.
                   </p>
                   <p className="mb-4 text-[#404040]">תהליך הקידוד הוא כדלקמן:</p>
-                  <p className="mb-10"><img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/18QuickStart.gif" alt="Coding GIF" className="max-w-[800px] w-full" /></p>
+                  <p className="mb-10"><img src="/1_Page12_Image1.jpg" alt="Coding GIF" className="max-w-[800px] w-full" /></p>
 
                   <h2 className="text-[24px] font-bold mb-4 mt-8" style={{ color: 'rgb(26, 26, 26)' }}>הורדת התוכנית (Program Download)</h2>
                   <p className="mb-4 text-[#404040]">כעת ניתן לחבר את הרכזת למחשב ולהוריד את התוכנית.</p>
                   <p className="mb-4 text-[#404040]"><strong>שלב 1:</strong> השתמשו בכבל microUSB כדי לחבר את הרכזת למחשב שלכם.</p>
-                  <p className="mb-4"><img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/19QuickStart.png" alt="Connect microUSB" className="max-w-[600px] w-full" /></p>
+                  <p className="mb-4"><img src="/1_Page13_Image1.jpg" alt="Connect microUSB" className="max-w-[600px] w-full" /></p>
                   <p className="mb-4 text-[#404040]"><strong>שלב 2:</strong> חברו את המכשיר לפלטפורמת הקידוד והורידו את התוכנית.</p>
-                  <p className="mb-4"><img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/20QuickStart.gif" alt="Download GIF" className="max-w-[800px] w-full" /></p>
+                  <p className="mb-4"><img src="/1_Page13_Image2.jpg" alt="Download GIF" className="max-w-[800px] w-full" /></p>
                   <p className="mb-2 font-bold text-[#404040]">הערות:</p>
                   <p className="mb-4 text-[#404040]">
                     לפעמים, עקב חיבור USB לא יציב, ההורדה עלולה להיכשל. כפי שמוצג למטה, הצד ימין מראה הורדה מוצלחת, בעוד הצד שמאל מראה הורדה שנכשלה. אם ההורדה נכשלת, התוכנית תישמר כקובץ <code>.hex</code> במחשב שלכם. במקרה של כישלון, אנא נתקו וחברו מחדש את כבל ה-USB בין המחשב לרכזת, וחזרו על שלב 2.
@@ -381,10 +381,10 @@ export default function App() {
                       <tbody>
                         <tr className="border-b border-[#e1e4e5] bg-white">
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/21QuickStart.png" alt="Success" className="max-w-[80%] mx-auto" />
+                            <img src="/1_Page14_Image1.jpg" alt="Success" className="max-w-[80%] mx-auto" />
                           </td>
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/22QuickStart.png" alt="Fail" className="max-w-[80%] mx-auto" />
+                            <img src="/1_Page14_Image2.jpg" alt="Fail" className="max-w-[80%] mx-auto" />
                           </td>
                         </tr>
                         <tr className="border-b border-[#e1e4e5] bg-[#f3f6f6]">
@@ -400,7 +400,7 @@ export default function App() {
                   </div>
 
                   <h2 className="text-[24px] font-bold mb-4 mt-8" style={{ color: 'rgb(13, 13, 13)' }}>הרצת התוכנית (Run the Program)</h2>
-                  <p className="mb-10"><img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/23QuickStart.gif" alt="Run GIF" className="max-w-[500px] w-full" /></p>
+                  <p className="mb-10"><img src="/1_Page15_Image1.jpg" alt="Run GIF" className="max-w-[500px] w-full" /></p>
 
                 </div>
               ) : (
