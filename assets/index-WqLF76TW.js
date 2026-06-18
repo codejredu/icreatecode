@@ -172,27 +172,27 @@ Error generating stack: `+i.message+`
 
 `,eu=[{id:"intro",title:"1. מבוא (Introduction)",chapters:[{id:"intro-main",title:"1.1 ערכת קידוד למיקרוביט",icon:O_,content:`# 1.1 ערכת קידוד ל-BBC micro:bit
 
-![Coding Kit for BBC micro:bit](/1_Page7_Image1.jpg)
+![Coding Kit for BBC micro:bit](1_Page7_Image1.jpg)
 
 ערכת הקידוד ל-BBC micro:bit מבוססת על לוח הבקרה הראשי של micro:bit וכוללת חיישנים, מפעילים (Actuators) ואביזרים נוספים. הערכה תוכננה בקפידה כדי להשתלב בצורה מושלמת עם חלקי LEGO, מה שהופך אותה לאידיאלית עבור תלמידים ליצירת פרויקטים טכנולוגיים ויצירתיים מבוססי מיקרוביט. מסמך זה מתמקד בלוח הבקרה הראשי, החיישנים, המפעילים והרחבות התוכנה הקשורות אליהם.`},{id:"intro-parts",title:"1.2 רשימת חלקים",icon:Q_,content:`# 1.2 רשימת חלקים
 
 | | | | |
 |:---:|:---:|:---:|:---:|
-| ![Microbit Hub](/1_Page9_Image1.jpg) | ![Servo Motor](/1_Page9_Image2.jpg) | ![DC Motor](/1_Page9_Image3.jpg) | ![Geek Servo](/1_Page9_Image4.jpg) |
+| ![Microbit Hub](1_Page9_Image1.jpg) | ![Servo Motor](1_Page9_Image2.jpg) | ![DC Motor](1_Page9_Image3.jpg) | ![Geek Servo](1_Page9_Image4.jpg) |
 | micro:bit Smart Hub | Servo Motor | DC Motor | Geek Servo |
-| ![Potentiometer](/1_Page9_Image5.jpg) | ![Joystick](/1_Page9_Image6.jpg) | ![RGB LED](/1_Page9_Image7.jpg) | ![Fan](/1_Page9_Image8.jpg) |
+| ![Potentiometer](1_Page9_Image5.jpg) | ![Joystick](1_Page9_Image6.jpg) | ![RGB LED](1_Page9_Image7.jpg) | ![Fan](1_Page9_Image8.jpg) |
 | Potentiometer Module | Joystick Module | RGB LED Module | Fan Module |
-| ![Recording](/1_Page9_Image9.jpg) | ![OLED](/1_Page9_Image10.jpg) | ![Laser](/1_Page9_Image11.jpg) | ![Electromagnet](/1_Page9_Image12.jpg) |
+| ![Recording](1_Page9_Image9.jpg) | ![OLED](1_Page9_Image10.jpg) | ![Laser](1_Page9_Image11.jpg) | ![Electromagnet](1_Page9_Image12.jpg) |
 | Recording Module | OLED Module | Laser Module | Electromagnet Module |
-| ![Red LED](/1_Page9_Image13.jpg) | ![Yellow LED](/1_Page9_Image14.jpg) | ![Blue LED](/1_Page9_Image15.jpg) | ![Green LED](/1_Page9_Image16.jpg) |
+| ![Red LED](1_Page9_Image13.jpg) | ![Yellow LED](1_Page9_Image14.jpg) | ![Blue LED](1_Page9_Image15.jpg) | ![Green LED](1_Page9_Image16.jpg) |
 | Red LED Module | Yellow LED Module | Blue LED Module | Green LED Module |
-| ![Ultrasonic](/1_Page9_Image17.jpg) | ![Gas](/1_Page9_Image18.jpg) | ![PIR](/1_Page9_Image19.jpg) | ![Temperature](/1_Page9_Image20.jpg) |
+| ![Ultrasonic](1_Page9_Image17.jpg) | ![Gas](1_Page9_Image18.jpg) | ![PIR](1_Page9_Image19.jpg) | ![Temperature](1_Page9_Image20.jpg) |
 | Ultrasonic Sensor | MQ-2 Gas Sensor | PIR Sensor | Temperature Sensor |
-| ![Flame](/1_Page9_Image21.jpg) | ![Hall](/1_Page9_Image22.jpg) | ![Grayscale](/1_Page9_Image23.jpg) | ![Photosensitive](/1_Page9_Image24.jpg) |
+| ![Flame](1_Page9_Image21.jpg) | ![Hall](1_Page9_Image22.jpg) | ![Grayscale](1_Page9_Image23.jpg) | ![Photosensitive](1_Page9_Image24.jpg) |
 | Flame Sensor | Hall Sensor | Grayscale Sensor | Photosensitive Sensor |
-| ![Button](/1_Page9_Image25.jpg) | ![Soil Moisture](/1_Page9_Image26.jpg) | ![Water Level](/1_Page9_Image27.jpg) | ![Long-Range Photoelectric](/1_Page9_Image28.jpg) |
+| ![Button](1_Page9_Image25.jpg) | ![Soil Moisture](1_Page9_Image26.jpg) | ![Water Level](1_Page9_Image27.jpg) | ![Long-Range Photoelectric](1_Page9_Image28.jpg) |
 | Button Sensor | Soil Moisture Sensor | Water Level Sensor | Long-Range Photoelectric Sensor |
-| ![Six way Color](/1_Page9_Image29.jpg) | | ![Grove Cable](/1_Page9_Image30.jpg) | ![Grove Male-to-Female Cable](/1_Page9_Image31.jpg) |
+| ![Six way Color](1_Page9_Image29.jpg) | | ![Grove Cable](1_Page9_Image30.jpg) | ![Grove Male-to-Female Cable](1_Page9_Image31.jpg) |
 | Six way Color&Gray Sensor | | Grove Cable | Grove Male-to-Female Cable |
 
 > התמונות מציגות את המודולים והחיישנים הכלולים בערכה.
@@ -241,7 +241,7 @@ Error generating stack: `+i.message+`
 
 היכנסו לפלטפורמת התכנות המקוונת של MakeCode, שם תראו את הממשק הראשי כפי שמוצג למטה.
 
-![MakeCode Interface](/1_Page11_Image1.jpg)
+![MakeCode Interface](1_Page11_Image1.jpg)
 
 ### השגת ההרחבה
 
@@ -252,22 +252,22 @@ Error generating stack: `+i.message+`
 בצעו את השלבים הבאים כדי להוסיף את ההרחבה לפלטפורמת MakeCode:
 
 **שלב 1:**
-![Step 1](/1_Page11_Image2.jpg)
+![Step 1](1_Page11_Image2.jpg)
 
 **שלב 2:**
-![Step 2](/1_Page11_Image3.jpg)
+![Step 2](1_Page11_Image3.jpg)
 
 **שלב 3:**
-![Step 3](/1_Page11_Image4.jpg)
+![Step 3](1_Page11_Image4.jpg)
 
 **שלב 4:**
-![Step 4](/1_Page11_Image5.jpg)
+![Step 4](1_Page11_Image5.jpg)
 
 **שלב 5:**
-![Step 5](/1_Page11_Image6.jpg)
+![Step 5](1_Page11_Image6.jpg)
 
 התהליך הכללי להוספת הרחבה הוא כדלקמן:
-![Process](/1_Page11_Image7.jpg)
+![Process](1_Page11_Image7.jpg)
 
 לאחר השלמת שלבים אלו, ההרחבה תתווסף בהצלחה.
 
@@ -275,12 +275,12 @@ Error generating stack: `+i.message+`
 
 כעת, בואו נכתוב תוכנית דוגמה בפלטפורמת התכנות.
 
-![Start Coding](/1_Page11_Image8.jpg)
+![Start Coding](1_Page11_Image8.jpg)
 
 תוכנית זו תאפשר למאוורר ולנורית ה-LED האדומה להידלק כאשר הכפתור נלחץ, ולהיכבות כאשר הכפתור משוחרר.
 
 תהליך הקידוד הוא כדלקמן:
-![Coding process](/1_Page12_Image1.jpg)
+![Coding process](1_Page12_Image1.jpg)
 
 ## הורדת תוכנית
 
@@ -288,33 +288,33 @@ Error generating stack: `+i.message+`
 
 **שלב 1:** השתמשו בכבל microUSB כדי לחבר את הרכזת למחשב שלכם.
 
-![Connect microUSB](/1_Page13_Image1.jpg)
+![Connect microUSB](1_Page13_Image1.jpg)
 
 **שלב 2:** חברו את המכשיר לפלטפורמת הקידוד והורידו את התוכנית.
 
-![Download program](/1_Page13_Image2.jpg)
+![Download program](1_Page13_Image2.jpg)
 
 **הערות:**
 
 לפעמים, עקב חיבור USB לא יציב, ההורדה עלולה להיכשל. כפי שמוצג למטה, הצד השמאלי מראה הורדה מוצלחת, בעוד הצד הימני מראה הורדה שנכשלה. במקרה שההורדה נכשלת, התוכנית תישמר כקובץ \`.hex\` במחשב שלכם. במקרה כזה, נתקו וחיברו מחדש את כבל ה-USB בין המחשב לרכזת, וחזרו על שלב 2.
 
-| ![Successful Download](/1_Page14_Image1.jpg) | ![Failed Download](/1_Page14_Image2.jpg) |
+| ![Successful Download](1_Page14_Image1.jpg) | ![Failed Download](1_Page14_Image2.jpg) |
 |:---:|:---:|
 | **הורדה מוצלחת:** כאשר מופיעה ההודעה "Downloaded". | **הורדה נכשלה:** כאשר מופיעה ההודעה "Download Complete", והקובץ נשמר במחשב שלכם דרך הדפדפן. |
 
 ## הרצת התוכנית
 
-![Run the program](/1_Page15_Image1.jpg)`}]},{id:"features",title:"3. סקירת תכונות (Feature Overview)",chapters:[{id:"feat-hub",title:"3.1 סקירת הרכזת החכמה (Smart Hub)",icon:G_,content:`# 3.1 סקירת הרכזת החכמה micro:bit Smart Hub
+![Run the program](1_Page15_Image1.jpg)`}]},{id:"features",title:"3. סקירת תכונות (Feature Overview)",chapters:[{id:"feat-hub",title:"3.1 סקירת הרכזת החכמה (Smart Hub)",icon:G_,content:`# 3.1 סקירת הרכזת החכמה micro:bit Smart Hub
 
 ## הקדמה (Introduction)
 
-![Hub](/1_Page16_Image1.jpg)
+![Hub](1_Page16_Image1.jpg)
 
 הרכזת החכמה **micro:bit Smart Hub** היא התקן הרחבה רב-תכליתי המיועד ללוח הפיתוח micro:bit, המציע מגוון רחב של ממשקים ותאימות גבוהה. היא כוללת 6 יציאות חיישני I/O סטנדרטיות, 4 יציאות I²C, 4 יציאות למנועי DC ו-4 יציאות למנועי סרוו, כולן בתקן הקוד הפתוח של Grove. הרכזת מתחברת ישירות ללוח ה-micro:bit ותואמת לרוב חומרת Grove. היא משתלבת בצורה חלקה עם קוביות LEGO, מה שמאפשר לתלמידים ליצור פרויקטים חדשניים בתחום ה-STEM עם טכנולוגיית micro:bit.
 
 ## מבנה (Structure)
 
-![Schematic Drawing](/1_Page17_Image1.jpg)
+![Schematic Drawing](1_Page17_Image1.jpg)
 
 תרשים סכמטי
 
@@ -360,17 +360,17 @@ Error generating stack: `+i.message+`
 ### חיבור ממשקים (Interface connection)
 
 **תרשים חיבור לממשק I/O סטנדרטי**
-![Standard I/O interface](/1_Page17_Image2.jpg)
+![Standard I/O interface](1_Page17_Image2.jpg)
 
 **תרשים חיבור לממשק I²C**
-![I2C interface](/1_Page17_Image3.jpg)
+![I2C interface](1_Page17_Image3.jpg)
 
 **תרשים חיבור למנוע**
-![Motor connection](/1_Page18_Image1.jpg)
+![Motor connection](1_Page18_Image1.jpg)
 
 **תרשים חיבור Geek Servo**
 הערה: כאשר מחברים Geek servo, שימו לב שגיליון המתכת של החיבור נמצא באותו צד כמו לוח הבקרה הראשי של ה-micro:bit. אל תהפכו אותו כדי למנוע נזק למודול.
-![Geek Servo connection](/1_Page19_Image1.jpg)
+![Geek Servo connection](1_Page19_Image1.jpg)
 
 ### טעינת הרכזת (Hub charge)
 
@@ -378,13 +378,13 @@ Error generating stack: `+i.message+`
 
 ## החלפת ה-micro:bit
 
-![Replacing the micro:bit](/1_Page21_Image1.jpg)
+![Replacing the micro:bit](1_Page21_Image1.jpg)
 
 כדי להחליף את לוח האם micro:bit, נתקו אותו יחד עם כיסוי המגן, הסירו את הלוח הישן והתקינו את הלוח החדש. לאחר מכן, הפכו את הרכזת והכניסו את כיסוי המגן בחזרה.
 
 ### מבוא ל-micro:bit
 
-| ![micro:bit V2.0](/1_Page21_Image2.jpg) | ![micro:bit V2.0 back](/1_Page22_Image1.jpg) |
+| ![micro:bit V2.0](1_Page21_Image2.jpg) | ![micro:bit V2.0 back](1_Page22_Image1.jpg) |
 |:---:|:---:|
 | micro:bit V2.0 | |
 
@@ -398,7 +398,7 @@ Error generating stack: `+i.message+`
 
 ### מבנה מחבר חד-צדדי (Single-Sided Connector Structure)
 
-![Single-Sided Connector](/1_Page22_Image2.jpg)
+![Single-Sided Connector](1_Page22_Image2.jpg)
 
 | מס' | שם | תיאור |
 |:---:|:---|:---|
@@ -407,7 +407,7 @@ Error generating stack: `+i.message+`
 
 ### מבנה מחבר דו-צדדי (Double-Sided Connector Structure)
 
-![Double-Sided Connector](/1_Page22_Image2.jpg)
+![Double-Sided Connector](1_Page22_Image2.jpg)
 
 | מס' | שם | תיאור |
 |:---:|:---|:---|
@@ -452,9 +452,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![Potentiometer 1](/1_Page24_Image1.jpg) | | |
+| ![Potentiometer 1](1_Page24_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![Potentiometer 2](/1_Page24_Image2.jpg) | ![Potentiometer 3](/1_Page24_Image3.jpg) | ![Potentiometer 4](/1_Page24_Image4.jpg) |
+| ![Potentiometer 2](1_Page24_Image2.jpg) | ![Potentiometer 3](1_Page24_Image3.jpg) | ![Potentiometer 4](1_Page24_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט למודול פוטנציומטר** | | |
 
@@ -465,7 +465,7 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![Modular Coding](/1_Page24_Image4.jpg)
+![Modular Coding](1_Page24_Image4.jpg)
 
 בתוכנת הקידוד MakeCode, ניתן לקרוא את ערך אות החיישן מיציאת P0 באמצעות הרחבת Microbit. לאחר מכן, ניתן להציג את הנתונים על גבי מטריצת נוריות ה-LED של ה-micro:bit.`},{id:"feat-ultrasonic",title:"חיישן אולטרסאונד (Ultrasonic)",icon:mt,content:`# חיישן אולטרסאונד (Ultrasonic Sensor)
 
@@ -491,9 +491,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![Ultrasonic 1](/1_Page25_Image1.jpg) | | |
+| ![Ultrasonic 1](1_Page25_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![Ultrasonic 2](/1_Page25_Image2.jpg) | ![Ultrasonic 3](/1_Page25_Image3.jpg) | ![Ultrasonic 4](/1_Page25_Image4.jpg) |
+| ![Ultrasonic 2](1_Page25_Image2.jpg) | ![Ultrasonic 3](1_Page25_Image3.jpg) | ![Ultrasonic 4](1_Page25_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט לחיישן אולטרסאונד** | | |
 
@@ -503,7 +503,7 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![Modular Coding](/1_Page25_Image4.jpg)
+![Modular Coding](1_Page25_Image4.jpg)
 
 באמצעות תוכנת הקידוד **MakeCode**, הרחבת Microbit מאפשרת קידוד לקריאת ערכי אותות מיציאות כגון **P0** ו-**P13**. ניתן להציג את הנתונים על גבי **תצוגת מטריצת נוריות ה-LED של ה-micro:bit**.
 
@@ -532,9 +532,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![Hall 1](/1_Page27_Image1.jpg) | | |
+| ![Hall 1](1_Page27_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![Hall 2](/1_Page27_Image2.jpg) | ![Hall 3](/1_Page27_Image3.jpg) | ![Hall 4](/1_Page27_Image4.jpg) |
+| ![Hall 2](1_Page27_Image2.jpg) | ![Hall 3](1_Page27_Image3.jpg) | ![Hall 4](1_Page27_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט לחיישן הול** | | |
 
@@ -544,7 +544,7 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![Modular Coding](/1_Page27_Image4.jpg)
+![Modular Coding](1_Page27_Image4.jpg)
 
 בתוכנת הקידוד MakeCode, ניתן לקרוא את ערך האות של החיישן מיציאת P0 באמצעות הרחבת Microbit. לאחר מכן, ניתן להציג את הנתונים על גבי מטריצת נוריות ה-LED של ה-micro:bit.`},{id:"feat-flame",title:"חיישן להבה (Flame)",icon:mt,content:`# חיישן להבה (Flame Sensor)
 
@@ -566,9 +566,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![Flame 1](/1_Page28_Image1.jpg) | | |
+| ![Flame 1](1_Page28_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![Flame 2](/1_Page28_Image2.jpg) | ![Flame 3](/1_Page28_Image3.jpg) | ![Flame 4](/1_Page28_Image4.jpg) |
+| ![Flame 2](1_Page28_Image2.jpg) | ![Flame 3](1_Page28_Image3.jpg) | ![Flame 4](1_Page28_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט לחיישן להבה** | | |
 
@@ -578,7 +578,7 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![Modular Coding](/1_Page28_Image4.jpg)
+![Modular Coding](1_Page28_Image4.jpg)
 
 בתוכנת הקידוד MakeCode, על ידי הוספת הרחבת Microbit, ניתן לתכנת את המערכת לקרוא את אות חיישן הלהבה מיציאת P0 ולהציג את הנתונים על גבי תצוגת מטריצת נוריות ה-LED של ה-micro:bit.`},{id:"feat-soil-moisture",title:"חיישן לחות אדמה (Soil Moisture)",icon:mt,content:`# חיישן לחות אדמה (Soil Moisture Sensor)
 
@@ -600,9 +600,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![Soil 1](/1_Page30_Image1.jpg) | | |
+| ![Soil 1](1_Page30_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![Soil 2](/1_Page30_Image2.jpg) | ![Soil 3](/1_Page30_Image3.jpg) | ![Soil 4](/1_Page30_Image4.jpg) |
+| ![Soil 2](1_Page30_Image2.jpg) | ![Soil 3](1_Page30_Image3.jpg) | ![Soil 4](1_Page30_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט לחיישן לחות אדמה** | | |
 
@@ -612,7 +612,7 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![Modular Coding](/1_Page30_Image4.jpg)
+![Modular Coding](1_Page30_Image4.jpg)
 
 בסביבת הקידוד MakeCode, על ידי הוספת הרחבת Microbit, ניתן לתכנת את המערכת לקרוא את אות חיישן לחות האדמה מיציאת P0 ולהציג את הנתונים על גבי תצוגת מטריצת נוריות ה-LED של ה-micro:bit.`},{id:"feat-water-level",title:"חיישן מפלס מים (Water Level)",icon:mt,content:`# חיישן מפלס מים (Water Level Sensor)
 
@@ -634,9 +634,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![Water 1](/1_Page31_Image1.jpg) | | |
+| ![Water 1](1_Page31_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![Water 2](/1_Page31_Image2.jpg) | ![Water 3](/1_Page31_Image3.jpg) | ![Water 4](/1_Page31_Image4.jpg) |
+| ![Water 2](1_Page31_Image2.jpg) | ![Water 3](1_Page31_Image3.jpg) | ![Water 4](1_Page31_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט לחיישן מפלס מים** | | |
 
@@ -646,7 +646,7 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![Modular Coding](/1_Page31_Image4.jpg)
+![Modular Coding](1_Page31_Image4.jpg)
 
 בסביבת הקידוד MakeCode, על ידי הוספת הרחבת Microbit, ניתן לתכנת את המערכת לקרוא את אות חיישן מפלס המים מיציאת P0 ולהציג את הנתונים על גבי תצוגת מטריצת נוריות ה-LED של ה-micro:bit.`},{id:"feat-joystick",title:"מודול ג'ויסטיק (Joystick)",icon:mt,content:`# מודול ג'ויסטיק (Joystick Module)
 
@@ -668,27 +668,27 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![Joystick 1](/1_Page33_Image1.jpg) | | |
+| ![Joystick 1](1_Page33_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![Joystick 2](/1_Page33_Image2.jpg) | ![Joystick 3](/1_Page33_Image3.jpg) | ![Joystick 4](/1_Page33_Image4.jpg) |
+| ![Joystick 2](1_Page33_Image2.jpg) | ![Joystick 3](1_Page33_Image3.jpg) | ![Joystick 4](1_Page33_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט למודול ג'ויסטיק** | | |
 
 ניתן לחבר את מודול הג'ויסטיק לממשק ה-**I²C** של ה-**micro:bit hub**. בסביבת התכנות, ניתן לקרוא את מיקום הג'ויסטיק ולהשתמש בו.
 
-![Joystick Calibration](/1_Page33_Image4.jpg)
+![Joystick Calibration](1_Page33_Image4.jpg)
 
 אם מודול הג'ויסטיק מציג סטיות דיוק, ניתן לבצע כיול באמצעות פינצטה: קצרו את מגעי הכיול בעזרת פינצטה. נורית החיווי תתחיל להבהב, מה שמציין כניסה למצב כיול. בצעו סיבוב מלא של **360°** עם הג'ויסטיק. לאחר השלמת הסיבוב, הסירו את הפינצטה. כאשר נורית החיווי דולקת ברציפות, הכיול הושלם בהצלחה.
 
 ## קידוד מודולרי (Modular Coding)
 
-![Modular Coding 1](/1_Page33_Image4.jpg)
+![Modular Coding 1](1_Page33_Image4.jpg)
 
 באמצעות תוכנת הקידוד **MakeCode**, הרחבת Microbit מאפשרת:
 
 קריאת אותות כיוון ממודול הג'ויסטיק דרך **יציאת ה-I²C** והצגתם על גבי **מטריצת נוריות ה-LED של ה-micro:bit**.
 
-![Modular Coding 2](/1_Page33_Image4.jpg)
+![Modular Coding 2](1_Page33_Image4.jpg)
 
 קריאת ערכי מיקום ממודול הג'ויסטיק דרך **יציאת ה-I²C** וכתיבתם ליציאה הטורית (serial port).`},{id:"feat-temperature",title:"חיישן טמפרטורה (Temperature)",icon:mt,content:`# חיישן טמפרטורה (Temperature Sensor)
 
@@ -710,9 +710,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![Temperature 1](/1_Page35_Image1.jpg) | | |
+| ![Temperature 1](1_Page35_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![Temperature 2](/1_Page35_Image2.jpg) | ![Temperature 3](/1_Page35_Image3.jpg) | ![Temperature 4](/1_Page35_Image4.jpg) |
+| ![Temperature 2](1_Page35_Image2.jpg) | ![Temperature 3](1_Page35_Image3.jpg) | ![Temperature 4](1_Page35_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט לחיישן טמפרטורה** | | |
 
@@ -725,7 +725,7 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![Modular Coding](/1_Page35_Image4.jpg)
+![Modular Coding](1_Page35_Image4.jpg)
 
 בסביבת הקידוד MakeCode, על ידי הוספת הרחבת Microbit, ניתן לתכנת את המערכת לקרוא את אות חיישן הטמפרטורה מיציאת P0 ולהציג את הנתונים על גבי תצוגת מטריצת נוריות ה-LED של ה-micro:bit.`},{id:"feat-long-range-photoelectric",title:"חיישן פוטואלקטרי לטווח ארוך (Long-Range Photoelectric)",icon:mt,content:`# חיישן פוטואלקטרי לטווח ארוך (Long-Range Photoelectric Sensor)
 
@@ -747,27 +747,27 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![Long 1](/1_Page36_Image1.jpg) | | |
+| ![Long 1](1_Page36_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![Long 2](/1_Page36_Image2.jpg) | ![Long 3](/1_Page36_Image3.jpg) | ![Long 4](/1_Page36_Image4.jpg) |
+| ![Long 2](1_Page36_Image2.jpg) | ![Long 3](1_Page36_Image3.jpg) | ![Long 4](1_Page36_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט לחיישן פוטואלקטרי לטווח ארוך** | | |
 
 ניתן לחבר את החיישן הפוטואלקטרי לטווח ארוך ליציאות P0, P1, P2, P8, P12, או P16 ברכזת ה-micro:bit (Intelligent Hub). על ידי תכנות, ניתן לעקוב אחר הסטטוס שלו. כאשר מזוהה מכשול, החיישן מפיק רמה לוגית נמוכה ("0") ונורית החיווי האדומה נדלקת. בהיעדר מכשול, הוא מפיק רמה לוגית גבוהה ("1") והנורית האדומה כבויה.
 
-![Long 5](/1_Page36_Image4.jpg)
+![Long 5](1_Page36_Image4.jpg)
 
 החיישן הפוטואלקטרי לטווח ארוך כולל מנגנון מובנה לכוונון רגישות. משתמשים יכולים לכוונן את הרגישות בקלות על ידי סיבוב הפוטנציומטר בחלק האחורי. סיבוב בכיוון השעון מגדיל את טווח הזיהוי והרגישות, בעוד סיבוב נגד כיוון השעון מקטין את הטווח והרגישות.
 
 ## קידוד מודולרי (Modular Coding)
 
-![Modular Coding](/1_Page36_Image4.jpg)
+![Modular Coding](1_Page36_Image4.jpg)
 
 בסביבת הקידוד MakeCode, ערך האות של החיישן מיציאת P0 יכול להיקרא באמצעות הרחבת ה-Microbit. הנתונים יכולים לאחר מכן להיות מוצגים על מטריצת נוריות ה-LED של ה-micro:bit.`},{id:"feat-six-way-color-grayscale",title:"חיישן צבע וגווני אפור עם 6 ערוצים (Six-Way Color & Grayscale)",icon:mt,content:`# חיישן צבע וגווני אפור עם שישה ערוצים (Six-Way Color & Grayscale Sensor)
 
 ## סקירה (Overview)
 
-![Six 1](/1_Page37_Image1.jpg)
+![Six 1](1_Page37_Image1.jpg)
 
 חיישן הצבע וגווני האפור בעל שישה ערוצים משתמש בשלושה זוגות של אלמנטים פוטואלקטריים כדי לחוש את צבע המשטח. הוא יכול גם לסייע לרובוט במעקב אחר קו (Line following) תוך כדי חישת צבע האובייקט.
 
@@ -777,7 +777,7 @@ Error generating stack: `+i.message+`
 
 ## עיקרון הפעולה (Principle)
 
-![Six 2](/1_Page38_Image1.jpg)
+![Six 2](1_Page38_Image1.jpg)
 
 ### עיקרון זיהוי צבע (Color Detection Principle)
 
@@ -793,7 +793,7 @@ Error generating stack: `+i.message+`
 
 ## מבנה (Structure)
 
-![Six 3](/1_Page39_Image1.jpg)
+![Six 3](1_Page39_Image1.jpg)
 
 | מס' | פריט (Item) | תיאור (Description) |
 |:---:|:---|:---|
@@ -820,9 +820,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![Six 4](/1_Page40_Image1.jpg) | | |
+| ![Six 4](1_Page40_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![Six 5](/1_Page40_Image2.jpg) | ![Six 6](/1_Page40_Image3.jpg) | |
+| ![Six 5](1_Page40_Image2.jpg) | ![Six 6](1_Page40_Image3.jpg) | |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | |
 | **תרשים חיווט לחיישן 6 ערוצים** | | |
 
@@ -832,7 +832,7 @@ Error generating stack: `+i.message+`
 
 ### פלט טורי (Serial Output)
 
-![Six 7](/1_Page40_Image3.jpg)
+![Six 7](1_Page40_Image3.jpg)
 
 בלוק הפלט הטורי (serial output block) מאפשר למשתמשים לקרוא ערכים אנלוגיים מכל ששת אזורי החישה במקביל, בכך לשפר את קצב איסוף ויציבות הנתונים.
 
@@ -840,18 +840,18 @@ Error generating stack: `+i.message+`
 
 ### פלט דיגיטלי (Digital Output Block)
 
-![Six 8](/1_Page40_Image3.jpg)
+![Six 8](1_Page40_Image3.jpg)
 
 בלוק זיהוי הצבע מאפיין יכולות זיהוי צבע תוך מתן אפשרות לבחירת ערוץ החיישן לחיפוש (לפי תעודת כתובת) בהסתמך עליו יכול לספק הודעה בהתאם לשאילתת שאלה אם הצבע שזוהה תואם לצבע אליו הוגדרה הבדיקה במידה וכן - יחזיר אמת (Yes) או במידה ולא - שיקר (No). החיישן יכול לזהות במדויק 5 צבעים: 'אדום', 'צהוב', 'ירוק', 'כחול', ו-'סגול'.
 
-![Six 9](/1_Page40_Image3.jpg)
+![Six 9](1_Page40_Image3.jpg)
 
 **זיהוי מעקב קווים (Line-following block)**
 הבלוק מתמקד בהבחנה מדויקת בין קו שחור מול מראה רקע אחר על סמך הלמידה המוקדמת שעבר, פעולה זו יכולה לשדר קלט בוליאני לתוך פקודת רכיב - מה שמסובב פלט דיגיטלי - אמת (Yes) או (No). שימו לב כי מצב "הקו השחור" במודל עבודה זה מזהה מצבי רקע בהם יש עוצמה קטנה בעקבות החזרות אור נמוכות, בה לעומת זאת סוג ה "רקע הכלול" - תלוי בסיטואציה - יש בו החזרות עוצמה וערכים גבוהים כפי שלמד בשלבי תהליכי הלמידה שלו למשימה זו.
 
 ### פלט אנלוגי (Analog Output Block)
 
-![Six 10](/1_Page40_Image3.jpg)
+![Six 10](1_Page40_Image3.jpg)
 
 בלוק פלט דיגיטלי מתרגם את סדרת החיווי מהערך התואם ומנפק ערך תואם (מתורגם לעוצמה ברמות מ 0 ל- 255) מהחיישן הנבחר בתעודת כתובת אל תוך מסוף הפלט.`},{id:"feat-mq2-gas",title:"חיישן גז (MQ-2 Gas Sensor)",icon:mt,content:`# חיישן גז (MQ-2 Gas Sensor)
 
@@ -873,9 +873,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![MQ 1](/1_Page44_Image1.jpg) | | |
+| ![MQ 1](1_Page44_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![MQ 2](/1_Page44_Image2.jpg) | ![MQ 3](/1_Page44_Image3.jpg) | ![MQ 4](/1_Page44_Image4.jpg) |
+| ![MQ 2](1_Page44_Image2.jpg) | ![MQ 3](1_Page44_Image3.jpg) | ![MQ 4](1_Page44_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט לחיישן גז MQ-2** | | |
 
@@ -885,7 +885,7 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![MQ 5](/1_Page44_Image4.jpg)
+![MQ 5](1_Page44_Image4.jpg)
 
 בסביבת הקידוד MakeCode, ניתן לקרוא את ערך אות החיישן מיציאת P0 באמצעות הרחבת micro:bit. לאחר מכן ניתן להציג את הנתונים על גבי מטריצת נוריות ה-LED של ה-micro:bit.`},{id:"feat-pir-sensor",title:"חיישן תנועה (PIR Sensor)",icon:mt,content:`# חיישן תנועה (PIR Sensor)
 
@@ -907,9 +907,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![PIR 1](/1_Page46_Image1.jpg) | | |
+| ![PIR 1](1_Page46_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![PIR 2](/1_Page46_Image2.jpg) | ![PIR 3](/1_Page46_Image3.jpg) | ![PIR 4](/1_Page46_Image4.jpg) |
+| ![PIR 2](1_Page46_Image2.jpg) | ![PIR 3](1_Page46_Image3.jpg) | ![PIR 4](1_Page46_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט לחיישן תנועה PIR** | | |
 
@@ -918,7 +918,7 @@ Error generating stack: `+i.message+`
 * כאשר החיישן מזהה מקור אינפרא-אדום נע, נורית החיווי הכחולה נדלקת והחיישן מפיק אות בערך 0.
 * אם לא מזוהה מקור אינפרא-אדום נע, הנורית הכחולה כבויה והחיישן מפיק אות בערך 1.
 
-![PIR 5](/1_Page46_Image4.jpg)
+![PIR 5](1_Page46_Image4.jpg)
 
 חיישן ה-PIR מצויד בפוטנציומטר ליניארי הממוקם בחלקו האחורי לכוונון עדין של הרגישות:
 
@@ -927,7 +927,7 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![PIR 6](/1_Page46_Image4.jpg)
+![PIR 6](1_Page46_Image4.jpg)
 
 בסביבת הקידוד MakeCode, על ידי הוספת הרחבת micro:bit, ניתן לתכנת את המערכת לקרוא את אות חיישן ה-PIR מיציאת P0 ולהציג את הנתונים על גבי תצוגת נוריות ה-LED של ה-micro:bit.`},{id:"feat-grayscale-sensor",title:"חיישן גווני אפור (Grayscale Sensor)",icon:mt,content:`# חיישן גווני אפור (Grayscale Sensor)
 
@@ -949,9 +949,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![G 1](/1_Page48_Image1.jpg) | | |
+| ![G 1](1_Page48_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![G 2](/1_Page48_Image2.jpg) | ![G 3](/1_Page48_Image3.jpg) | ![G 4](/1_Page48_Image4.jpg) |
+| ![G 2](1_Page48_Image2.jpg) | ![G 3](1_Page48_Image3.jpg) | ![G 4](1_Page48_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט לחיישן גווני אפור** | | |
 
@@ -959,7 +959,7 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![Grayscale Coding](/1_Page48_Image4.jpg)
+![Grayscale Coding](1_Page48_Image4.jpg)
 
 בתוכנת התכנות MakeCode, באמצעות הוספת הרחבת ה-micro:bit, תוכלו לתכנת את החיישן לקרוא את רמת האפור בפורט P0 ולהציג את התמורה של האות הדיגיטלי או האנלוגי.`},{id:"feat-photosensitive-sensor",title:"חיישן אור (Photosensitive Sensor)",icon:mt,content:`# חיישן אור (Photosensitive Sensor)
 
@@ -981,9 +981,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![Photosensitive 1](/1_Page50_Image1.jpg) | | |
+| ![Photosensitive 1](1_Page50_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![Photosensitive 2](/1_Page50_Image2.jpg) | ![Photosensitive 3](/1_Page50_Image3.jpg) | ![Photosensitive 4](/1_Page50_Image4.jpg) |
+| ![Photosensitive 2](1_Page50_Image2.jpg) | ![Photosensitive 3](1_Page50_Image3.jpg) | ![Photosensitive 4](1_Page50_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט לחיישן אור** | | |
 
@@ -991,7 +991,7 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![Photosensitive Coding](/1_Page50_Image4.jpg)
+![Photosensitive Coding](1_Page50_Image4.jpg)
 
 בתוכנת התכנות MakeCode, באמצעות הוספת הרחבת ה-micro:bit, תוכלו לתכנת את החיישן לקרוא את רמת האור בפורט P0 ולהציג את התמורה על גבי מטריצת ה-LED של ה-micro:bit.`},{id:"feat-button-sensor",title:"חיישן כפתור (Button Sensor)",icon:mt,content:`# חיישן לחצן (Button Sensor)
 
@@ -1013,9 +1013,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![B 1](/1_Page52_Image1.jpg) | | |
+| ![B 1](1_Page52_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![B 2](/1_Page52_Image2.jpg) | ![B 3](/1_Page52_Image3.jpg) | ![B 4](/1_Page52_Image4.jpg) |
+| ![B 2](1_Page52_Image2.jpg) | ![B 3](1_Page52_Image3.jpg) | ![B 4](1_Page52_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט לחיישן לחצן** | | |
 
@@ -1023,7 +1023,7 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![B 5](/1_Page52_Image4.jpg)
+![B 5](1_Page52_Image4.jpg)
 
 בתוכנת הקידוד MakeCode, ידי הוספת הרחבת Microbit, ניתן לתכנת לקרוא את ערך האות של חיישן הלחצן מיציאת P0 ולהציג נתון זה ויזואלית על גבי תצוגת הכלי נוריות ה-LED של ה-micro:bit.`},{id:"feat-actuators",title:"3.4 פונקציונליות מפעילים (Actuators)",icon:ln,content:`# 3.4 פונקציונליות מפעילים (Actuator Function)
 
@@ -1044,7 +1044,7 @@ Error generating stack: `+i.message+`
 
 ## מבוא (Introduction)
 
-![Servo Motor 1](/1_Page53_Image1.jpg)
+![Servo Motor 1](1_Page53_Image1.jpg)
 
 מנוע הסרוו הוא מודול רב-תכליתי התומך במספר מצבי בקרה של סיבוב, ומאפשר שליטה מדויקת בזוויות סיבוב, מהירות ומיקום. הוא משתמש בתקשורת דיגיטלית I²C לאינטראקציה מהירה וללא השהיה עם בקרים. המנוע כולל לחצן החלפת כתובת I²C ונורית חיווי מצב, המאפשרים למשתמשים להציג בקלות את כתובת המכשיר הנוכחית ומצב הבקרה. חיבור המסוף שלו בסגנון הכנס-הפעל מפשט את החלפת החוטים, ופותר את בעיית קשיי התיקון הנגרמת מחיווט שאינו ניתן לניתוק.
 
@@ -1063,7 +1063,7 @@ Error generating stack: `+i.message+`
 
 ## מבנה (Structural)
 
-![Servo Motor 2](/1_Page54_Image1.jpg)
+![Servo Motor 2](1_Page54_Image1.jpg)
 
 | מס' | שם | תיאור |
 |:---:|:---|:---
@@ -1097,13 +1097,13 @@ Error generating stack: `+i.message+`
 
 ניתן לחבר את מנוע הסרוו לכל ממשק I²C ברכזת החכמה של ה-micro:bit. ניתן לחבר לכל היותר 4 מנועי סרוו לרכזת. השתמשו בכבל Grove לחיבור.
 
-![Servo Motor 3](/1_Page55_Image1.jpg)
+![Servo Motor 3](1_Page55_Image1.jpg)
 
 ### 2. בדיקה והגדרת צבע נורית חיווי המצב של המנוע
 
 מנוע הסרוו מציין את כתובת ה-I²C שלו באמצעות צבע נורית חיווי המצב. בעת הקידוד, צבע נורית החיווי משמש גם לאיתור המנוע עליו יש לשלוט. לכן, לאחר מכן, ודאו שאתם בודקים את צבע נורית החיווי. ודאו שהצבעים של מנועי הסרוו המחוברים אינם זהים. אם הנוריות באותו צבע, לחצו לחיצה ארוכה על הלחצן להחלפת כתובת לפני השימוש.
 
-![Servo Motor 4](/1_Page56_Image1.jpg)
+![Servo Motor 4](1_Page56_Image1.jpg)
 
 > **הערה**: שימוש במנועי סרוו בעלי אותו צבע נורית חיבור על אותה רכזת יגרום לפעולה לא תקינה.
 
@@ -1113,14 +1113,14 @@ Error generating stack: `+i.message+`
 
 | תוכנית לדוגמה 1 | תוכנית לדוגמה 2 |
 |:---:|:---:|
-| ![Servo Motor 5](/1_Page56_Image2.jpg) | ![Servo Motor 6](/1_Page56_Image3.jpg) |
+| ![Servo Motor 5](1_Page56_Image2.jpg) | ![Servo Motor 6](1_Page56_Image3.jpg) |
 | תוכנית זו מדפיסה את המיקום הנוכחי של המנוע האדום דרך היציאה הטורית. | תוכנית זו מדפיסה את מהירות הפעולה הנוכחית של המנוע האדום דרך היציאה הטורית. |
 
 להלן, נסביר את בלוקי הקידוד לשליטה במנוע יחיד ובצמד מנועים.
 
 ### קידוד למנוע יחיד (Single Motor Coding Block)
 
-![Servo Motor 7](/1_Page57_Image1.jpg)
+![Servo Motor 7](1_Page57_Image1.jpg)
 
 | מס' | תיאור |
 |:---|:---
@@ -1133,13 +1133,13 @@ Error generating stack: `+i.message+`
 
 מודול המנוע הכפול משמש בעיקר בתרחישים שבהם משתמשים בשני מנועי סרוו לבניית שלדת רובוט או יישומים אחרים הדורשים בקרה סינכרונית של שני מנועים.
 
-![Servo Motor 8](/1_Page58_Image1.jpg)
+![Servo Motor 8](1_Page58_Image1.jpg)
 
 התמונה למעלה מציגה דוגמה להגדרת שלדה (chassis) כברירת מחדל. החץ האדום מצביע על כיוון ההתקדמות של הרובוט, כאשר מנוע ① מוגדר כמנוע שמאלי ומנוע ② מוגדר כמנוע ימני.
 
 **דוגמת קידוד למנוע סרוו כפול**
 
-![Servo Motor 9](/1_Page59_Image1.jpg)
+![Servo Motor 9](1_Page59_Image1.jpg)
 
 | מס' | תיאור |
 |:---|:---
@@ -1149,7 +1149,7 @@ Error generating stack: `+i.message+`
 
 ## מבוא (Introduction)
 
-![DC Motor 1](/1_Page60_Image1.jpg)
+![DC Motor 1](1_Page60_Image1.jpg)
 
 מנוע זרם ישר (DC Motor) הוא מפעיל הממיר אנרגיה חשמלית לתנועה סיבובית מכנית. הוא מתאים להנעת גלגלים של רובוטים, מאווררים ומערכות בעלות תנועה רציפה. המנוע מבוקר באמצעות הרכזת החכמה ה-micro:bit smart hub המאפשרת לקבוע את מהירותו ואת כיוון הסיבוב שלו.
 
@@ -1167,9 +1167,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![DC Motor 1](/1_Page60_Image1.jpg) | | |
+| ![DC Motor 1](1_Page60_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![DC Motor 2](/1_Page60_Image2.jpg) | ![DC Motor 3](/1_Page60_Image3.jpg) | ![DC Motor 4](/1_Page60_Image4.jpg) |
+| ![DC Motor 2](1_Page60_Image2.jpg) | ![DC Motor 3](1_Page60_Image3.jpg) | ![DC Motor 4](1_Page60_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט למנוע זרם ישר** | | |
 
@@ -1177,13 +1177,13 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![DC Motor 5](/1_Page60_Image4.jpg)
+![DC Motor 5](1_Page60_Image4.jpg)
 
 בתוכנת התכנות MakeCode, בעזרת הרחבת ה-micro:bit, תוכלו לשלוט במהירות ובכיוון של מנוע DC המחובר ליציאה מוגדרת. לדוגמה, הגדרת מהירות ל-50% קדימה או -50% לאחור.`},{id:"feat-geek-servo",title:"מנוע גיק סרוו (Geek Servo)",icon:ln,content:`# מנוע גיק סרוו (Geek Servo)
 
 ## מבוא (Introduction)
 
-![Geek Servo 1](/1_Page61_Image1.jpg)
+![Geek Servo 1](1_Page61_Image1.jpg)
 
 מנוע ה-Geek Servo הוא מנוע בעל מבנה מיוחד התואם לחלקי לגו, המאפשר בניית דגמים מורכבים בבהירות ודיוק רב. בניגוד לסרוו סטנדרטי, מנוע זה מציע שילוב של זווית סיבוב רחבה וקלות הרכבה על גבי פינים של לבנים מכניות.
 
@@ -1200,9 +1200,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![Geek Servo 1](/1_Page61_Image1.jpg) | | |
+| ![Geek Servo 1](1_Page61_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![Geek Servo 2](/1_Page61_Image2.jpg) | ![Geek Servo 3](/1_Page61_Image3.jpg) | ![Geek Servo 4](/1_Page61_Image4.jpg) |
+| ![Geek Servo 2](1_Page61_Image2.jpg) | ![Geek Servo 3](1_Page61_Image3.jpg) | ![Geek Servo 4](1_Page61_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט למנוע גיק סרוו** | | |
 
@@ -1210,15 +1210,15 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![Geek Servo 5](/1_Page61_Image4.jpg)
+![Geek Servo 5](1_Page61_Image4.jpg)
 
 בתוכנת התכנות MakeCode, תוכלו להזיז את מנוע ה-Geek Servo לזווית מסוימת (למשל 90 מעלות או 180 מעלות) או לשלוט על סיבוב רציף שלו במהירות מבוקרת.`},{id:"feat-led-module",title:"מודול נוריות (LED Module)",icon:ln,content:`# מודול נוריות (LED Module)
 
 ## מבוא (Introduction)
 
-![LED Module 1](/1_Page63_Image1.jpg) | | |
+![LED Module 1](1_Page63_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![LED Module 2](/1_Page63_Image2.jpg) | ![LED Module 3](/1_Page63_Image3.jpg) | ![LED Module 4](/1_Page63_Image4.jpg) |
+| ![LED Module 2](1_Page63_Image2.jpg) | ![LED Module 3](1_Page63_Image3.jpg) | ![LED Module 4](1_Page63_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט למודול נוריות** | | |
 
@@ -1226,13 +1226,13 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![LED Module 5](/1_Page63_Image4.jpg)
+![LED Module 5](1_Page63_Image4.jpg)
 
 בתוכנת התכנות MakeCode, באמצעות הוספת הרחבת ה-micro:bit, תוכלו לתכנת את מודול ה-LED להבהב.`},{id:"feat-fan-module",title:"מודול מאוורר (Fan Module)",icon:ln,content:`# מודול מאוורר (Fan Module)
 
 ## מבוא (Introduction)
 
-![Fan Module 1](/1_Page64_Image1.jpg)
+![Fan Module 1](1_Page64_Image1.jpg)
 
 מודול המאוורר משתמש במנוע זרם ישר (DC Motor) כדי להמיר אנרגיה חשמלית לאנרגיה מכנית, ובכך להניע את להבי המאוורר להסתובב. ניתן להשתמש במודול זה לעיצוב מאווררים חכמים, מערכות פיזור חום, מדחפים ויישומים דומיים אחרים.
 
@@ -1253,9 +1253,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![Fan Module 1](/1_Page64_Image1.jpg) | | |
+| ![Fan Module 1](1_Page64_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![Fan Module 2](/1_Page64_Image2.jpg) | ![Fan Module 3](/1_Page64_Image3.jpg) | ![Fan Module 4](/1_Page64_Image4.jpg) |
+| ![Fan Module 2](1_Page64_Image2.jpg) | ![Fan Module 3](1_Page64_Image3.jpg) | ![Fan Module 4](1_Page64_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט למודול מאוורר** | | |
 
@@ -1265,13 +1265,13 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![Fan Module 5](/1_Page64_Image4.jpg)
+![Fan Module 5](1_Page64_Image4.jpg)
 
 בתוכנת התכנות MakeCode, באמצעות הוספת הרחבת ה-micro:bit, תוכלו לתכנת את מודול המאוורר להתחיל או לעצור. על ידי שימוש בבלוק ה-"plus" (הוספה), ניתן לכוונן את מהירות המאוורר.`},{id:"feat-electromagnet-module",title:"מודול אלקטרומגנט (Electromagnet Module)",icon:ln,content:`# מודול אלקטרומגנט (Electromagnet Module)
 
 ## מבוא (Introduction)
 
-![Electromagnet Module 1](/1_Page65_Image1.jpg)
+![Electromagnet Module 1](1_Page65_Image1.jpg)
 
 אלקטרומגנט הוא מכשיר שמייצר מגנטיות כאשר זורם דרכו זרם חשמלי. סליל מוליך המתאים להספק של הליבה מלופף סביב ליבה מגנטית. כאשר זורם זרם דרך הסליל, הוא מייצר שדה מגנטי ופועל כמגנט. השדה המגנטי נעלם כאשר אספקת החשמל מנותקת.
 
@@ -1289,9 +1289,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![Electromagnet 1](/1_Page65_Image1.jpg) | | |
+| ![Electromagnet 1](1_Page65_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![Electromagnet 2](/1_Page65_Image2.jpg) | ![Electromagnet 3](/1_Page65_Image3.jpg) | ![Electromagnet 4](/1_Page65_Image4.jpg) |
+| ![Electromagnet 2](1_Page65_Image2.jpg) | ![Electromagnet 3](1_Page65_Image3.jpg) | ![Electromagnet 4](1_Page65_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט למודול אלקטרומגנט** | | |
 
@@ -1301,7 +1301,7 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![Electromagnet 5](/1_Page65_Image4.jpg)
+![Electromagnet 5](1_Page65_Image4.jpg)
 
 בתוכנת התכנות MakeCode, באמצעות הוספת הרחבת ה-micro:bit, תוכלו לתכנת את מודול האלקטרומגנט לפעול באופן הבא:
 
@@ -1311,7 +1311,7 @@ Error generating stack: `+i.message+`
 
 ## מבוא (Introduction)
 
-![Laser Module 1](/1_Page67_Image1.jpg)
+![Laser Module 1](1_Page67_Image1.jpg)
 
 הרכיב המרכזי של מודול הלייזר הוא דיודת לייזר, שהיא מכשיר חצי מוליך המסוגל להמיר אנרגיה חשמלית ישירות לאנרגיית אור לייזר.
 
@@ -1331,9 +1331,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![Laser Module 1](/1_Page67_Image1.jpg) | | |
+| ![Laser Module 1](1_Page67_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![Laser Module 2](/1_Page67_Image2.jpg) | ![Laser Module 3](/1_Page67_Image3.jpg) | ![Laser Module 4](/1_Page67_Image4.jpg) |
+| ![Laser Module 2](1_Page67_Image2.jpg) | ![Laser Module 3](1_Page67_Image3.jpg) | ![Laser Module 4](1_Page67_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט למודול לייזר** | | |
 
@@ -1347,13 +1347,13 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![Laser Module 5](/1_Page67_Image4.jpg)
+![Laser Module 5](1_Page67_Image4.jpg)
 
 בתוכנת התכנות MakeCode, באמצעות הוספת הרחבת ה-micro:bit, תוכלו לתכנת את מודול הלייזר להבהב, ולהשתמש בבלוק ה-"+" (הוספה) כדי לכוונן את עוצמת הלייזר.`},{id:"feat-oled-module",title:"מודול מסך (OLED Module)",icon:ln,content:`# מודול מסך (OLED Module)
 
 ## מבוא (Introduction)
 
-![OLED Module 1](/1_Page68_Image3.jpg)
+![OLED Module 1](1_Page68_Image3.jpg)
 
 צגי OLED (דיודה פולטת אור אורגנית) משתמשים בחומרים אורגניים לפליטת אור. בניגוד לצגים מסורתיים הדורשים תאורה אחורשונה, צגי OLED פולטים אור משל עצמם, ובכך מציעים בהירות וניגודיות גבוהות עם צריכת חשמל נמוכה ביותר. רזולוציית המסך היא 128 על 64 פיקסלים, וגודלו 0.96 אינץ'. שבב הדוחף (Driver Chip) של המסך הינו SSD1306. לצורך שימוש, יש לחבר אותו ליציאת ה-I²C של ה-**micro:bit smart hub** לצורך תקשורת.
 
@@ -1373,9 +1373,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![OLED 1](/1_Page68_Image1.jpg) | | |
+| ![OLED 1](1_Page68_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![OLED 2](/1_Page68_Image2.jpg) | ![OLED 3](/1_Page68_Image3.jpg) | ![OLED 4](/1_Page68_Image4.jpg) |
+| ![OLED 2](1_Page68_Image2.jpg) | ![OLED 3](1_Page68_Image3.jpg) | ![OLED 4](1_Page68_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט למודול מסך OLED** | | |
 
@@ -1383,25 +1383,25 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![OLED 5](/1_Page69_Image1.jpg)
+![OLED 5](1_Page69_Image1.jpg)
 
 בתוכנת התכנות MakeCode, באמצעות הוספת הרחבת ה-micro:bit, תצוגת ה-OLED מחולקת ל-4 שורות ו-13 עמודות. באפשרותכם ללחוץ כדי לאשר את מיקום ההתחלה להצגת מחרוזות או מספרים. לאחר מכן, תוכלו להזין את הטקסט או המספרים להצגה. בדוגמה המוצגת, מודול התצוגה OLED מתוכנת להציג את המחרוזת "Hello" בשורה הראשונה, עמודה ראשונה, ואת המספר "12" בשורה השנייה, עמודה ראשונה.
 
-![OLED 6](/1_Page70_Image1.jpg)
+![OLED 6](1_Page70_Image1.jpg)
 
 תצוגת ה-OLED מחולקת ל-4 שורות ו-13 עמודות, כאשר ערכי X נעים בין 0 ל-12 (חופפים לעמודות 1 עד 13). באופן דומה, ערכי Y נעים בטווח של 0 עד 3 (חופפים לשורות 1 עד 4). לאחר מכן תוכלו להזין את הטקסט או המספרים להצגה. ערך צבע של 0 מציג טקסט עם רקע לבן וטקסט שחור, בעוד ערך צבע של 1 מציג רקע שחור עם טקסט לבן.
 
-![OLED 7](/1_Page71_Image1.jpg)
+![OLED 7](1_Page71_Image1.jpg)
 
 בדוגמה, מודול התצוגה OLED מתוכנת להציג את המחרוזת "Hello" ברקע לבן וטקסט שחור בשורה הראשונה, עמודה ראשונה, ואת המספר "12" ברקע שחור וטקסט לבן בשורה הרביעית, עמודה תשיעית.
 
-![OLED 8](/1_Page72_Image1.jpg)
+![OLED 8](1_Page72_Image1.jpg)
 
 באפשרותכם לנקות את מסך תצוגת ה-OLED באמצעות שימוש בבלוק ה-"Clear" (ניקוי).`},{id:"feat-rgb-led-module",title:"מודול טבעת נוריות RGB (RGB LED Module)",icon:ln,content:`# מודול טבעת נוריות RGB (RGB LED Module)
 
 ## מבוא (Introduction)
 
-![RGB 1](/1_Page73_Image1.jpg)
+![RGB 1](1_Page73_Image1.jpg)
 
 מודול ה-RGB LED משלב 8 נוריות LED בצבע מלא (Full-color) ומשתמש בשבב הבקרה הראשי WS2812 כדי להשיג שליטה באמצעות חוט בודד (Single-wire control). תכנון זה מאפשר למשתמשים לשלוט בכל נוריות ה-LED באמצעות פין אות בודד, מה שמציע גמישות בהפעלה. בנוסף, על ידי התאמה מדויקת של ערכי ה-RGB, המשתמשים יכולים להציג מגוון רחב של צבעים תוססים. ניתן לכוונן את בהירות טבעת ה-LED בטווח של 0 עד 255, בהתאם לצרכי התאורה השונים.
 
@@ -1421,9 +1421,9 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-| ![RGB 1](/1_Page73_Image1.jpg) | | |
+| ![RGB 1](1_Page73_Image1.jpg) | | |
 |:---:|:---:|:---:|
-| ![RGB 2](/1_Page73_Image2.jpg) | ![RGB 3](/1_Page73_Image3.jpg) | ![RGB 4](/1_Page73_Image4.jpg) |
+| ![RGB 2](1_Page73_Image2.jpg) | ![RGB 3](1_Page73_Image3.jpg) | ![RGB 4](1_Page73_Image4.jpg) |
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט למודול RGB LED** | | |
 
@@ -1431,19 +1431,19 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![RGB 5](/1_Page74_Image1.jpg)
+![RGB 5](1_Page74_Image1.jpg)
 
 על מנת להשתמש במודול ה-RGB LED, יש לאתחל תחילה את הפורט. בדוגמה זו, "strip" הוא המשתנה ההתחלתי. ניתן להגדיר משתנים שונים שיתאימו למודולי RGB LED שונים בפורטים שונים. באפשרותכם גם לכוונן את הבהירות המתאימה של טבעת ה-LED בטווח של (0~255).
 
-![RGB 6](/1_Page74_Image2.jpg)
+![RGB 6](1_Page74_Image2.jpg)
 
 מודול זה כולל עשרה צבעים מוגדרים מראש: אדום, כתום, צהוב, ירוק, כחול, אינדיגו, סגול לילך, סגול, שחור ולבן. באפשרותכם להזין את ערכי ה-RGB המתאימים כדי להציג את הצבע הרצוי על גבי טבעת ה-LED.
 
-![RGB 7](/1_Page74_Image3.jpg)
+![RGB 7](1_Page74_Image3.jpg)
 
 באפשרותכם להזין את ערכי ה-RGB המתאימים כדי להציג את הצבע הרצוי על גבי טבעת ה-LED.
 
-![RGB 8](/1_Page75_Image1.jpg)
+![RGB 8](1_Page75_Image1.jpg)
 
 בתוכנת התכנות MakeCode, באמצעות הוספת הרחבת ה-micro:bit, תוכלו לתכנת את מודול ה-RGB LED להציג צבע אדום, כפי שמוצג בתוכנית הדוגמה.`},{id:"feat-recording-module",title:"מודול הקלטה (Recording Module)",icon:ln,content:`# מודול הקלטה (Recording Module)
 
@@ -1464,7 +1464,7 @@ Error generating stack: `+i.message+`
 
 ## שימוש (Usage)
 
-![Recording Module Overview](/1_Page76_Image1.jpg)
+![Recording Module Overview](1_Page76_Image1.jpg)
 
 | מספר | פריט | פונקציונליות |
 |:---:|:---:|:---|
@@ -1477,7 +1477,7 @@ Error generating stack: `+i.message+`
 
 **5 אפקטים קוליים מובנים**: ירי מקלע, ירי לייזר, האצת מכונית מרוץ, תחילת מלחמה, ספירה לאחור.
 
-| ![Recording Module 3](/1_Page77_Image1.jpg) | ![Recording Module 4](/1_Page77_Image2.jpg) | ![Recording Module 5](/1_Page77_Image3.jpg) |
+| ![Recording Module 3](1_Page77_Image1.jpg) | ![Recording Module 4](1_Page77_Image2.jpg) | ![Recording Module 5](1_Page77_Image3.jpg) |
 |:---:|:---:|:---:|
 | *מבט מהצד (Side View)* | *מבט חזיתי (Front View)* | *מבט מהצד (Side View)* |
 | **תרשים חיווט למודול הקלטה Recording Module** | | |
@@ -1486,7 +1486,7 @@ Error generating stack: `+i.message+`
 
 ## קידוד מודולרי (Modular Coding)
 
-![Recording Module Code](/1_Page78_Image1.jpg)
+![Recording Module Code](1_Page78_Image1.jpg)
 
 בתוכנת התכנות MakeCode, באמצעות הוספת הרחבת ה-micro:bit, תוכלו לתכנת את מודול ההקלטה להשמיע את אפקט הקול של "ירי מקלע" (machine gun) כאשר לחצן A נלחץ.`}]},{id:"software",title:"4. תוכנה והרחבות (Software and Extension Features)",chapters:[{id:"soft-index",title:"4. תוכנה והרחבות (ראשי)",icon:Jc,content:`# תוכנה והרחבות (Software and Extension Features)
 
@@ -1523,7 +1523,7 @@ Error generating stack: `+i.message+`
 
 ### 1.1.1. ממשק קידוד (Coding Interface)
 
-![Coding Interface](/1_Page79_Image1.jpg)
+![Coding Interface](1_Page79_Image1.jpg)
 
 | מספר | שם האזור | תיאור |
 |:---:|:---|:---|
@@ -1543,7 +1543,7 @@ Error generating stack: `+i.message+`
 
 ### 1.1.2. ממשק ניהול פרויקטים ומדריכים (Project Management and Tutorial Interface)
 
-![Project Management and Tutorial Interface](/1_Page80_Image1.jpg)
+![Project Management and Tutorial Interface](1_Page80_Image1.jpg)
 
 | מספר | פריט | תיאור |
 |:---:|:---|:---|
@@ -1555,14 +1555,14 @@ Error generating stack: `+i.message+`
 
 ## 2.1. ממשק קידוד מודולרי (Modular Coding Interface)
 
-![Modular Coding Interface](/1_Page83_Image1.jpg)
+![Modular Coding Interface](1_Page83_Image1.jpg)
 
 | מספר | פריט | תיאור |
 |:---:|:---:|:---|
 | ① | בלוקים בסיסיים | בלוקים המסופקים על ידי MakeCode עצמו. |
 | ② | הרחבות מיובאות | בלוקי דרייבר המסופקים עבור מודולים היקפיים. |
 
-![Modular Coding GIF 1](/1_Page84_Image1.jpg)
+![Modular Coding GIF 1](1_Page84_Image1.jpg)
 
 הרחבה זו כוללת שתי קטגוריות עיקריות: "חיישנים" (Sensors) ו"מפעילים" (Actuators). בהתאם למאפייני המודול ההיקפי, עליך להשתמש בבלוק המתאים תחת הקטגוריה המתאימה. לדוגמה, כדי להשתמש במודול הפוטנציומטר השייך לחיישנים, עליך למצוא את הבלוק המתאים תחת קטגוריית החיישנים.
 
@@ -1611,13 +1611,13 @@ Error generating stack: `+i.message+`
 
 ### 2.1.3. כתיבת בלוקי קוד (Writing Code Blocks)
 
-![Writing Code Blocks](/1_Page84_Image2.jpg)
+![Writing Code Blocks](1_Page84_Image2.jpg)
 
 יש להציב את קוביות הקוד באזור הקידוד כנדרש. בלוקים שלא מוקמו נכון יסומנו בצבע צהוב זוהר. בלוקים המסומנים בצהוב לא ייכללו בתוכנה שרצה ולא ישפיעו על ביצוע התוכנית.
 
 ### 2.1.4. בחירת יציאות / פורטים (Port Selection)
 
-![Port Selection](/1_Page84_Image3.jpg)
+![Port Selection](1_Page84_Image3.jpg)
 
 לחצו על הבחירה של הפורט לאחר קוביית הקוד כדי לבחור את הפין או היציאה המתאימה ולחבר את הפורט התואם ברכזת (smart hub) למכשיר. הפורטים הזמינים משתנים עבור כל קוביית קוד. ודאו שהמכשיר מחובר לפורט הנכון שנבחר בקוד, כיוון שחיבור לפורטים אחרים עלול לגרום לתקלות והתנהגות לא צפויה.
 
@@ -1625,13 +1625,13 @@ Error generating stack: `+i.message+`
 
 ### 2.1.5. שיפוט לוגי של בלוקי קוד (Logic Judgment for Code Blocks)
 
-![Logic Judgment](/1_Page84_Image4.jpg)
+![Logic Judgment](1_Page84_Image4.jpg)
 
 קוביות קוד משושות כמו בלוק "זיהוי ג'ויסטיק" (Joystick Detected) יכולות לשמש לצורך שיפוט ותנאים לוגיים בעזרת משפטים כמו \`אם...\` (If...). כאשר התנאי של הבלוק מתקיים (לדוגמה, הג'ויסטיק נדחף כלפי מעלה), הוא יחזיר אמת (True) ויבצע את הקוד שמתחת ל-\`אז...\` (Then).
 
 ### 2.1.6. הגדרת ערכים לבלוקי קוד (Setting Values for Code Blocks)
 
-![Setting Values](/1_Page85_Image1.jpg)
+![Setting Values](1_Page85_Image1.jpg)
 
 קוביות קוד בעלות תיבת קלט אובלית לבנה מאפשרות לכם להזין מספרים ישירות או להגדיר משתנים שימלאו את תיבת הקלט. הערכים בתיבת הקלט אינם מוגבלים, אך עליכם להזין את טווח המספרים הנכון בהתאם לכללי השימוש של המודול. אחרת, המודול עלול לפעול באופן לא תקין.
 
@@ -1639,13 +1639,13 @@ Error generating stack: `+i.message+`
 
 #### 2.1.7.1. מודול נוריות RGB (RGB Block)
 
-![RGB Block 1](/1_Page85_Image2.jpg)
+![RGB Block 1](1_Page85_Image2.jpg)
 
 לאחר גרירת בלוק תאורת ה-RGB, המערכת תיצור אוטומטית משתנה בשם \`strip\`. כל התאמה או שינוי של נוריות ה-RGB יצטרכו להתבסס ולהתייחס למשתנה ספציפי זה.
 
 > **הערה**: מודול נוריות ה-RGB יכול לכוונן את כל הנוריות באופן אחיד בלבד, ולא ניתן לקבוע צבעים שונים עבור כל נורית בנפרד.
 
-![RGB Block 2](/1_Page85_Image2.jpg)
+![RGB Block 2](1_Page85_Image2.jpg)
 
 בדוגמת הקוד המצולמת, במהלך שלב האתחול כאשר התוכנית מתחילה (\`on start\`), היא מגדירה תחילה את פורט החיבור ואת עוצמת הבהירות של נוריות ה-RGB; בהמשך, בלולאה אינסופית (\`forever\`), התוכנית קובעת את צבע ה-RGB ללבן, מה שאומר שערכי הבהירות עבור אדום (Red), ירוק (Green) וכחול (Blue) מוגדרים כולם ל-255.
 
@@ -1653,12 +1653,12 @@ Error generating stack: `+i.message+`
 
 | | בלוקי שליטה אלחוטית (Wireless Control Blocks) | | |
 |:---:|:---:|:---:|:---:|
-| **בלוק קוד** | ![Group](/1_Page85_Image2.jpg) | ![Send](/1_Page85_Image2.jpg) | ![Receive](/1_Page85_Image2.jpg) |
+| **בלוק קוד** | ![Group](1_Page85_Image2.jpg) | ![Send](1_Page85_Image2.jpg) | ![Receive](1_Page85_Image2.jpg) |
 | **תיאור** | בלוק הגדרת קבוצה (Set Group) | בלוק שליחת מידע (Send Information) | בלוק קבלת מידע (Receive Information) |
 
 בקרה אלחוטית משתמשת בתדר תדרי 2.4GHz כמדיום תקשורת, ומאפשרת תקשורת אלחוטית ושליטה הדדית בין מספר רכזות חכמות. ראשית, יש להגדיר את אותה קבוצה (ערוץ תקשורת) ברכזות השונות. רכזות באותה קבוצה יכולות לשלוח ולקבל מידע באמצעות "בלוק שליחת מידע" ו"בלוק קבלת מידע".
 
-| קוד | ![Group Code](/1_Page85_Image2.jpg) | ![Group Code 2](/1_Page85_Image2.jpg) |
+| קוד | ![Group Code](1_Page85_Image2.jpg) | ![Group Code 2](1_Page85_Image2.jpg) |
 |:---:|:---:|:---:|
 | **תפקיד** | שולח (Sender) | מקבל (Receiver) |
 
@@ -1671,19 +1671,19 @@ Error generating stack: `+i.message+`
 
 ## 2.2. בלוקים מתקדמים (Advanced Block)
 
-![Advanced Gifs](/1_Page85_Image2.jpg)
+![Advanced Gifs](1_Page85_Image2.jpg)
 
 ### 2.2.1. תקשורת טורית (Serial)
 
 תקשורת טורית (Serial) משמשת לעתים קרובות לקריאת ערכי מדידה ממודולים שונים והצגתם בצורת דיאגרמות קו וגרפים בזמן אמת. כמו כן, ניתן להשתמש בה לצורך ניפוי שגיאות בקוד (Debugging) על ידי שליחת מידע למחשב כדי לציין שפעולה מסוימת בוצעה בהצלחה לאחר עמידה בתנאים מוגדרים.
 
-![Serial Blocks](/1_Page85_Image2.jpg)
+![Serial Blocks](1_Page85_Image2.jpg)
 
 בדוגמה שלעיל, פקודת הכתיבה הטורית הראשונה שולחת את המחרוזת "123" למחשב, בעוד שפקודת הכתיבה הטורית השנייה שולחת את ערך קריאת חיישן האור ישירות למחשב.
 
 כאשר שולחים רק את ערך חיישן האור, תוכלו ללחוץ על כפתור "הצג נתוני מכשיר" (Show Data Device) בצד שמאל של הממשק כדי לצפות בגרף וצורת הגל (waveform) המשתנה בצורה דינמית בהתאם לחשיפה או הסתרה של חיישן האור.
 
-![Serial Gif](/1_Page85_Image2.jpg)
+![Serial Gif](1_Page85_Image2.jpg)
 
 ---
 
@@ -1699,11 +1699,11 @@ Error generating stack: `+i.message+`
 
 | | |
 |:---:|:---:|
-| ![F01](/1_Page84_Image1.jpg) | ![F02](/1_Page84_Image2.jpg) |
+| ![F01](1_Page84_Image1.jpg) | ![F02](1_Page84_Image2.jpg) |
 | **1.** הכינו רכיב **ICLink 2.0** אחד, כוונו את מתג ה-SWD ימינה, ואת מתג קדימה/אחורה (forward/reverse) שמאלה. | **2.** השתמשו בכבל Grove כדי לחבר את מנוע הסרוו לפורט J1 ב-ICLink 2.0, ולאחר מכן חברו את ה-ICLink 2.0 למחשב. |
-| ![F03](/1_Page84_Image3.jpg) | ![F04](/1_Page84_Image4.jpg) |
+| ![F03](1_Page84_Image3.jpg) | ![F04](1_Page84_Image4.jpg) |
 | **3.** לחצו והחזיקו את הכפתור האמצעי של המנוע ובמקביל לחצו על כפתור האיפוס (Reset) ב-**ICLink 2.0**. נורית החיווי של המנוע תשתנה למצב צבעי הקשת (Rainbow). | **4.** פתחו את מרכז עדכוני הקושחה, בחרו במודול מנוע הסרוו (Servo Motor Module), ואז בחרו את גרסת הקושחה המתאימה לשדרוג. |
-| ![F05](/1_Page85_Image1.jpg) | ![F06](/1_Page85_Image2.jpg) |
+| ![F05](1_Page85_Image1.jpg) | ![F06](1_Page85_Image2.jpg) |
 | **5.** לחצו על "חיבור" (Connect), בחרו את הפורט הטורי (Serial Port) של המנוע, ולאחר שהחיבור מצליח, סגרו את החלונית. | **6.** לחצו על "שדרוג" (Upgrade) והמתינו עד שסרגל ההתקדמות יושלם במלואו. |`},{id:"soft-log",title:"4. יומן עדכונים של הרחבת micro:bit",icon:kd,content:"# 4. יומן עדכונים של הרחבת micro:bit (micro:bit Extension Update Log)\n\n| גרסה (Version) | תוכן העדכון (Update Content) | תאריך עדכון (Update Date) |\n|:---:|:---|:---:|\n| [V1.1.8](https://github.com/ICreateRobot/microbit) | 1. תקינה קבועה של מוסכמת השמות להרחבות (Standardized extension naming)<br/>2. עדכון פרוטוקול התקשורת (גרסת 4 סיביות / 4-bit)<br/>3. עדכון פרוטוקול התקשורת של מנוע הסרוו (גרסת 5 סיביות / 5-bit)<br/>4. אופטימיזציה של בקרת מנוע כפול עם `[speed1][speed2]` להסתובבות למשך `[time]` שניות<br/>5. הסרת מנגנון זיהוי נעילה (stall detection) כאשר מנוע פועל למשך `*` שניות<br/>6. אופטימיזציה של מנוע סרוו: תיקון בעיית סיבוב לא תקין של המנוע השמאלי כאשר זווית המיקום `[location]` שלילית בתצורת מנוע כפול<br/>7. אופטימיזציה של מנוע סרוו: תיקון בעיית נעילה וקפיאה בתצורת מנוע כפול עם `[speed1][speed2]` לסיבוב של `[location]` מעלות<br/>8. אופטימיזציה של מנוע סרוו: תיקון בעיית קיפאון במנוע `[dev]` לסיבוב מ-`[speed]` אל `[location]` במודול | 2024-09-03 |"}]},{id:"course",title:"5. מקרי בוחן ושיעורים (Course Case)",chapters:[{id:"course-all",title:"5.1 מערכי שיעור מובנים",icon:H_,content:`# 5.1 מגוון פרויקטים
 
 בצעו את התרגילים המלאים המגיעים עם הערכה.
