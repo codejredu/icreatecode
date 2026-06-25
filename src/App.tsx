@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Menu, X, ChevronLeft, ChevronRight } from 'lucide-react';
@@ -12,10 +12,24 @@ import { sections } from './data';
 export default function App() {
   const [activeChapterId, setActiveChapterId] = useState(sections[0].chapters[0].id);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
 
   // Flatten chapters for easy previous/next navigation
   const allChapters = sections.flatMap(s => s.chapters);
   const activeChapter = allChapters.find((c) => c.id === activeChapterId) || allChapters[0];
+
+  const filteredSections = useMemo(() => {
+    if (!searchQuery.trim()) return sections;
+    const query = searchQuery.toLowerCase();
+    
+    return sections.map(section => ({
+      ...section,
+      chapters: section.chapters.filter(chapter => 
+        chapter.title.toLowerCase().includes(query) || 
+        chapter.content.toLowerCase().includes(query)
+      )
+    })).filter(section => section.chapters.length > 0);
+  }, [searchQuery]);
 
   return (
     <div className="flex h-screen bg-[#edf0f2] text-slate-900 font-sans" dir="rtl">
@@ -45,35 +59,43 @@ export default function App() {
           <input 
             type="text" 
             placeholder="חיפוש במסמכים..." 
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full bg-[#edf0f2] text-slate-800 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#2980B9]"
           />
         </div>
 
         <nav className="flex-1 py-4 overflow-y-auto custom-scrollbar">
-          {sections.map((section) => (
-            <div key={section.id} className="mb-4">
-              <h3 className="text-xs font-bold text-white/40 mb-1 px-4 uppercase tracking-wider">{section.title}</h3>
-              <div className="space-y-0.5">
-                {section.chapters.map((chapter) => {
-                  const Icon = chapter.icon;
-                  const isActive = chapter.id === activeChapterId;
-                  return (
-                    <button
-                      key={chapter.id}
-                      onClick={() => {
-                        setActiveChapterId(chapter.id);
-                        setIsSidebarOpen(false);
-                      }}
-                      className={`w-full flex items-center gap-3 px-4 py-2 text-right transition-colors ${isActive ? 'bg-[#2980B9] text-white font-semibold' : 'text-[#c9c9c9] hover:bg-[#403c3c] hover:text-white'}`}
-                    >
-                      {Icon && <Icon size={16} className={isActive ? 'text-white' : 'text-white/50'} />}
-                      <span className="text-[14px]">{chapter.title}</span>
-                    </button>
-                  );
-                })}
-              </div>
+          {filteredSections.length === 0 ? (
+            <div className="text-white/50 text-center text-sm mt-4">
+              לא נמצאו תוצאות לחיפוש.
             </div>
-          ))}
+          ) : (
+            filteredSections.map((section) => (
+              <div key={section.id} className="mb-4">
+                <h3 className="text-xs font-bold text-white/40 mb-1 px-4 uppercase tracking-wider">{section.title}</h3>
+                <div className="space-y-0.5">
+                  {section.chapters.map((chapter) => {
+                    const Icon = chapter.icon;
+                    const isActive = chapter.id === activeChapterId;
+                    return (
+                      <button
+                        key={chapter.id}
+                        onClick={() => {
+                          setActiveChapterId(chapter.id);
+                          setIsSidebarOpen(false);
+                        }}
+                        className={`w-full flex items-center gap-3 px-4 py-2 text-right transition-colors ${isActive ? 'bg-[#2980B9] text-white font-semibold' : 'text-[#c9c9c9] hover:bg-[#403c3c] hover:text-white'}`}
+                      >
+                        {Icon && <Icon size={16} className={isActive ? 'text-white' : 'text-white/50'} />}
+                        <span className="text-[14px] text-right line-clamp-2">{chapter.title}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            ))
+          )}
         </nav>
       </aside>
 
@@ -97,12 +119,21 @@ export default function App() {
           <div className="max-w-4xl mx-auto bg-white md:shadow-sm md:border border-slate-200 p-6 md:p-10 min-h-full">
             
             {/* Breadcrumb style top */}
-            <div className="flex bg-[#edf0f2] md:bg-transparent rounded px-4 py-2 md:p-0 mb-8 border border-slate-200 md:border-none items-center text-sm text-slate-500 gap-2">
-              <span>Docs</span>
-              <ChevronLeft size={14} className="opacity-50" />
-              <span>{sections.find(s => s.chapters.some(c => c.id === activeChapterId))?.title}</span>
-              <ChevronLeft size={14} className="opacity-50" />
-              <span className="text-slate-800">{activeChapter.title}</span>
+            <div className="flex flex-wrap bg-[#edf0f2] md:bg-transparent rounded px-4 py-2 md:p-0 mb-8 border border-slate-200 md:border-none items-center text-sm text-slate-500 gap-2" dir="rtl">
+              <button onClick={() => setActiveChapterId(sections[0].chapters[0].id)} className="cursor-pointer hover:text-[#2980B9] transition-colors focus:outline-none" dir="auto">Docs</button>
+              <ChevronLeft size={14} className="opacity-50 shrink-0" />
+              <button 
+                onClick={() => {
+                  const section = sections.find(s => s.chapters.some(c => c.id === activeChapterId));
+                  if (section) setActiveChapterId(section.chapters[0].id);
+                }}
+                className="cursor-pointer hover:text-[#2980B9] transition-colors focus:outline-none"
+                dir="auto"
+              >
+                {sections.find(s => s.chapters.some(c => c.id === activeChapterId))?.title}
+              </button>
+              <ChevronLeft size={14} className="opacity-50 shrink-0" />
+              <span className="text-slate-800 font-medium" dir="auto">{activeChapter.title}</span>
             </div>
 
             <div className="markdown-body prose prose-slate max-w-none prose-headings:text-slate-800 prose-a:text-[#2980B9]">
@@ -141,13 +172,12 @@ export default function App() {
                       { img: '/1_Page9_Image27.jpg', name: 'חיישן מפלס מים' },
                       { img: '/1_Page9_Image28.jpg', name: 'חיישן פוטואלקטרי לטווח ארוך' },
                       { img: '/1_Page9_Image29.jpg', name: 'חיישן צבע אופטי 6 כיוונים' },
-                      { img: '', name: '' },
                       { img: '/1_Page9_Image30.jpg', name: 'כבל Grove' },
                       { img: '/1_Page9_Image31.jpg', name: 'כבל Grove זכר-נקבה' },
                     ].map((item, index) => (
                       <div key={index} className="border-r border-b border-slate-200 bg-white flex flex-col items-center justify-between">
                         <div className="flex-1 flex items-center justify-center p-4">
-                          {item.img && <img src={item.img.startsWith('/') ? `https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images${item.img}` : item.img} alt={item.name} className="max-w-[150px] max-h-[150px] object-contain border-0 shadow-none my-0" referrerPolicy="no-referrer" />}
+                          {item.img && <img src={item.img} alt={item.name} className="max-w-[150px] max-h-[150px] object-contain border-0 shadow-none my-0" />}
                         </div>
                         <div className="w-full text-center p-3 bg-slate-50 border-t border-slate-200 text-sm font-medium text-slate-700 min-h-[48px] flex items-center justify-center">
                           {item.name}
@@ -238,13 +268,13 @@ export default function App() {
                       <tbody>
                         <tr className="border-b border-[#e1e4e5] bg-white">
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image1.jpg" alt="micro:bit Smart Hub" className="max-w-[75%] inline-block m-0" referrerPolicy="no-referrer" />
+                            <img src="/1_Page9_Image1.jpg" alt="micro:bit Smart Hub" className="max-w-[75%] inline-block m-0" />
                           </td>
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image25.jpg" alt="Button Sensor" className="max-w-[75%] inline-block m-0" referrerPolicy="no-referrer" />
+                            <img src="/1_Page9_Image25.jpg" alt="Button Sensor" className="max-w-[75%] inline-block m-0" />
                           </td>
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image30.jpg" alt="Grove Cables" className="max-w-[75%] inline-block m-0" referrerPolicy="no-referrer" />
+                            <img src="/1_Page9_Image30.jpg" alt="Grove Cables" className="max-w-[75%] inline-block m-0" />
                           </td>
                         </tr>
                         <tr className="border-b border-[#e1e4e5] bg-[#f3f6f6]">
@@ -254,10 +284,10 @@ export default function App() {
                         </tr>
                         <tr className="border-b border-[#e1e4e5] bg-white">
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image8.jpg" alt="Fan Module" className="max-w-[75%] inline-block m-0" referrerPolicy="no-referrer" />
+                            <img src="/1_Page9_Image8.jpg" alt="Fan Module" className="max-w-[75%] inline-block m-0" />
                           </td>
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/1_Page9_Image13.jpg" alt="Red LED" className="max-w-[75%] inline-block m-0" referrerPolicy="no-referrer" />
+                            <img src="/1_Page9_Image13.jpg" alt="Red LED" className="max-w-[75%] inline-block m-0" />
                           </td>
                           <td className="p-3 border border-[#e1e4e5]"></td>
                         </tr>
@@ -277,13 +307,13 @@ export default function App() {
                       <tbody>
                         <tr className="border-b border-[#e1e4e5] bg-white">
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/PowerOn.jpg" alt="Power on" className="max-w-[85%] inline-block m-0" referrerPolicy="no-referrer" />
+                            <img src="/PowerOn.jpg" alt="Power on" className="max-w-[85%] inline-block m-0" />
                           </td>
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/BatteryIndicator.jpg" alt="Battery indicator" className="max-w-[85%] inline-block m-0" referrerPolicy="no-referrer" />
+                            <img src="/BatteryIndicator.jpg" alt="Battery indicator" className="max-w-[85%] inline-block m-0" />
                           </td>
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images/ChargingPort.jpg" alt="Charging port" className="max-w-[85%] inline-block m-0" referrerPolicy="no-referrer" />
+                            <img src="/ChargingPort.jpg" alt="Charging port" className="max-w-[85%] inline-block m-0" />
                           </td>
                         </tr>
                         <tr className="border-b border-[#e1e4e5] bg-[#f3f6f6]">
@@ -432,11 +462,7 @@ export default function App() {
                       return <a href={href} target="_blank" rel="noopener noreferrer" {...props}>{children}</a>;
                     },
                     img: ({node, src, alt, ...props}) => {
-                      let resolvedSrc = src;
-                      if (src && src.startsWith('/')) {
-                        resolvedSrc = `https://icreaterobot-microbit-docs.readthedocs.io/en/latest/_images${src}`;
-                      }
-                      return <img src={resolvedSrc} alt={alt} className="max-w-full my-4 rounded-lg shadow-sm border border-slate-100 animate-fade-in" referrerPolicy="no-referrer" {...props} />;
+                      return <img src={src} alt={alt} className="max-w-full my-4 rounded-lg shadow-sm border border-slate-100 animate-fade-in" {...props} />;
                     }
                   }}
                 >
