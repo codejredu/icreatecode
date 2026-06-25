@@ -1,4 +1,4 @@
-/**
+ /**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -17,6 +17,14 @@ export default function App() {
   // Flatten chapters for easy previous/next navigation
   const allChapters = sections.flatMap(s => s.chapters);
   const activeChapter = allChapters.find((c) => c.id === activeChapterId) || allChapters[0];
+
+  const getAssetUrl = (path: string | undefined) => {
+    if (!path) return '';
+    // If it's an external URL, return as is
+    if (path.startsWith('http://') || path.startsWith('https://')) return path;
+    const base = import.meta.env.BASE_URL || '/';
+    return `${base}${path.startsWith('/') ? path.slice(1) : path}`;
+  };
 
   const filteredSections = useMemo(() => {
     if (!searchQuery.trim()) return sections;
@@ -140,44 +148,43 @@ export default function App() {
               {activeChapter.id === 'intro-parts' ? (
                 <div className="parts-list-container">
                   <h1 className="text-[32px] font-bold mb-6 text-black mt-8" style={{ fontFamily: 'var(--font-display)' }}>1.2 רשימת חלקים</h1>
-                  
                   <div className="grid grid-cols-2 md:grid-cols-4 border-l border-t border-slate-200">
                     {[
-                      { img: '/1_Page9_Image1.jpg', name: 'רכזת חכמה micro:bit' },
-                      { img: '/1_Page9_Image2.jpg', name: 'מנוע סרוו' },
-                      { img: '/1_Page9_Image3.jpg', name: 'מנוע DC' },
-                      { img: '/1_Page9_Image4.jpg', name: 'מנוע סרוו Geek' },
-                      { img: '/1_Page9_Image5.jpg', name: 'מודול פוטנציומטר' },
-                      { img: '/1_Page9_Image6.jpg', name: 'מודול ג\'ויסטיק' },
-                      { img: '/1_Page9_Image7.jpg', name: 'מודול נורות RGB' },
-                      { img: '/1_Page9_Image8.jpg', name: 'מודול מאוורר' },
-                      { img: '/1_Page9_Image9.jpg', name: 'מודול הקלטה' },
-                      { img: '/1_Page9_Image10.jpg', name: 'מודול מסך OLED' },
-                      { img: '/1_Page9_Image11.jpg', name: 'מודול לייזר' },
-                      { img: '/1_Page9_Image12.jpg', name: 'מודול אלקטרומגנט' },
-                      { img: '/1_Page9_Image13.jpg', name: 'מודול LED אדומה' },
-                      { img: '/1_Page9_Image14.jpg', name: 'מודול LED צהובה' },
-                      { img: '/1_Page9_Image15.jpg', name: 'מודול LED כחולה' },
-                      { img: '/1_Page9_Image16.jpg', name: 'מודול LED ירוקה' },
-                      { img: '/1_Page9_Image17.jpg', name: 'חיישן אולטראסוני' },
-                      { img: '/1_Page9_Image18.jpg', name: 'חיישן גז MQ-2' },
-                      { img: '/1_Page9_Image19.jpg', name: 'חיישן תנועה PIR' },
-                      { img: '/1_Page9_Image20.jpg', name: 'חיישן טמפרטורה' },
-                      { img: '/1_Page9_Image21.jpg', name: 'חיישן להבה' },
-                      { img: '/1_Page9_Image22.jpg', name: 'חיישן מגנטי (Hall)' },
-                      { img: '/1_Page9_Image23.jpg', name: 'חיישן גווני אפור' },
-                      { img: '/1_Page9_Image24.jpg', name: 'חיישן אור' },
-                      { img: '/1_Page9_Image25.jpg', name: 'חיישן כפתור' },
-                      { img: '/1_Page9_Image26.jpg', name: 'חיישן לחות אדמה' },
-                      { img: '/1_Page9_Image27.jpg', name: 'חיישן מפלס מים' },
-                      { img: '/1_Page9_Image28.jpg', name: 'חיישן פוטואלקטרי לטווח ארוך' },
-                      { img: '/1_Page9_Image29.jpg', name: 'חיישן צבע אופטי 6 כיוונים' },
-                      { img: '/1_Page9_Image30.jpg', name: 'כבל Grove' },
-                      { img: '/1_Page9_Image31.jpg', name: 'כבל Grove זכר-נקבה' },
+                      { img: './1_Page9_Image1.jpg', name: 'רכזת חכמה micro:bit' },
+                      { img: './1_Page9_Image2.jpg', name: 'מנוע סרוו' },
+                      { img: './1_Page9_Image3.jpg', name: 'מנוע DC' },
+                      { img: './1_Page9_Image4.jpg', name: 'מנוע סרוו Geek' },
+                      { img: './1_Page9_Image5.jpg', name: 'מודול פוטנציומטר' },
+                      { img: './1_Page9_Image6.jpg', name: 'מודול ג\'ויסטיק' },
+                      { img: './1_Page9_Image7.jpg', name: 'מודול נורות RGB' },
+                      { img: './1_Page9_Image8.jpg', name: 'מודול מאוורר' },
+                      { img: './1_Page9_Image9.jpg', name: 'מודול הקלטה' },
+                      { img: './1_Page9_Image10.jpg', name: 'מודול מסך OLED' },
+                      { img: './1_Page9_Image11.jpg', name: 'מודול לייזר' },
+                      { img: './1_Page9_Image12.jpg', name: 'מודול אלקטרומגנט' },
+                      { img: './1_Page9_Image13.jpg', name: 'מודול LED אדומה' },
+                      { img: './1_Page9_Image14.jpg', name: 'מודול LED צהובה' },
+                      { img: './1_Page9_Image15.jpg', name: 'מודול LED כחולה' },
+                      { img: './1_Page9_Image16.jpg', name: 'מודול LED ירוקה' },
+                      { img: './1_Page9_Image17.jpg', name: 'חיישן אולטראסוני' },
+                      { img: './1_Page9_Image18.jpg', name: 'חיישן גז MQ-2' },
+                      { img: './1_Page9_Image19.jpg', name: 'חיישן תנועה PIR' },
+                      { img: './1_Page9_Image20.jpg', name: 'חיישן טמפרטורה' },
+                      { img: './1_Page9_Image21.jpg', name: 'חיישן להבה' },
+                      { img: './1_Page9_Image22.jpg', name: 'חיישן מגנטי (Hall)' },
+                      { img: './1_Page9_Image23.jpg', name: 'חיישן גווני אפור' },
+                      { img: './1_Page9_Image24.jpg', name: 'חיישן אור' },
+                      { img: './1_Page9_Image25.jpg', name: 'חיישן כפתור' },
+                      { img: './1_Page9_Image26.jpg', name: 'חיישן לחות אדמה' },
+                      { img: './1_Page9_Image27.jpg', name: 'חיישן מפלס מים' },
+                      { img: './1_Page9_Image28.jpg', name: 'חיישן פוטואלקטרי לטווח ארוך' },
+                      { img: './1_Page9_Image29.jpg', name: 'חיישן צבע אופטי 6 כיוונים' },
+                      { img: './1_Page9_Image30.jpg', name: 'כבל Grove' },
+                      { img: './1_Page9_Image31.jpg', name: 'כבל Grove זכר-נקבה' },
                     ].map((item, index) => (
                       <div key={index} className="border-r border-b border-slate-200 bg-white flex flex-col items-center justify-between">
                         <div className="flex-1 flex items-center justify-center p-4">
-                          {item.img && <img src={item.img} alt={item.name} className="max-w-[150px] max-h-[150px] object-contain border-0 shadow-none my-0" />}
+                          {item.img && <img src={getAssetUrl(item.img)} alt={item.name} className="max-w-[150px] max-h-[150px] object-contain border-0 shadow-none my-0" />}
                         </div>
                         <div className="w-full text-center p-3 bg-slate-50 border-t border-slate-200 text-sm font-medium text-slate-700 min-h-[48px] flex items-center justify-center">
                           {item.name}
@@ -268,13 +275,13 @@ export default function App() {
                       <tbody>
                         <tr className="border-b border-[#e1e4e5] bg-white">
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="/1_Page9_Image1.jpg" alt="micro:bit Smart Hub" className="max-w-[75%] inline-block m-0" />
+                            <img src={getAssetUrl("/1_Page9_Image1.jpg")} alt="micro:bit Smart Hub" className="max-w-[75%] inline-block m-0" />
                           </td>
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="/1_Page9_Image25.jpg" alt="Button Sensor" className="max-w-[75%] inline-block m-0" />
+                            <img src={getAssetUrl("/1_Page9_Image25.jpg")} alt="Button Sensor" className="max-w-[75%] inline-block m-0" />
                           </td>
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="/1_Page9_Image30.jpg" alt="Grove Cables" className="max-w-[75%] inline-block m-0" />
+                            <img src={getAssetUrl("/1_Page9_Image30.jpg")} alt="Grove Cables" className="max-w-[75%] inline-block m-0" />
                           </td>
                         </tr>
                         <tr className="border-b border-[#e1e4e5] bg-[#f3f6f6]">
@@ -284,10 +291,10 @@ export default function App() {
                         </tr>
                         <tr className="border-b border-[#e1e4e5] bg-white">
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="/1_Page9_Image8.jpg" alt="Fan Module" className="max-w-[75%] inline-block m-0" />
+                            <img src={getAssetUrl("/1_Page9_Image8.jpg")} alt="Fan Module" className="max-w-[75%] inline-block m-0" />
                           </td>
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="/1_Page9_Image13.jpg" alt="Red LED" className="max-w-[75%] inline-block m-0" />
+                            <img src={getAssetUrl("/1_Page9_Image13.jpg")} alt="Red LED" className="max-w-[75%] inline-block m-0" />
                           </td>
                           <td className="p-3 border border-[#e1e4e5]"></td>
                         </tr>
@@ -307,13 +314,13 @@ export default function App() {
                       <tbody>
                         <tr className="border-b border-[#e1e4e5] bg-white">
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="/PowerOn.jpg" alt="Power on" className="max-w-[85%] inline-block m-0" />
+                            <img src={getAssetUrl("/PowerOn.jpg")} alt="Power on" className="max-w-[85%] inline-block m-0" />
                           </td>
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="/BatteryIndicator.jpg" alt="Battery indicator" className="max-w-[85%] inline-block m-0" />
+                            <img src={getAssetUrl("/BatteryIndicator.jpg")} alt="Battery indicator" className="max-w-[85%] inline-block m-0" />
                           </td>
                           <td className="p-3 text-center border border-[#e1e4e5] align-middle">
-                            <img src="/ChargingPort.jpg" alt="Charging port" className="max-w-[85%] inline-block m-0" />
+                            <img src={getAssetUrl("/ChargingPort.jpg")} alt="Charging port" className="max-w-[85%] inline-block m-0" />
                           </td>
                         </tr>
                         <tr className="border-b border-[#e1e4e5] bg-[#f3f6f6]">
@@ -462,7 +469,7 @@ export default function App() {
                       return <a href={href} target="_blank" rel="noopener noreferrer" {...props}>{children}</a>;
                     },
                     img: ({node, src, alt, ...props}) => {
-                      return <img src={src} alt={alt} className="max-w-full my-4 rounded-lg shadow-sm border border-slate-100 animate-fade-in" {...props} />;
+                      return <img src={getAssetUrl(src)} alt={alt} className="max-w-full my-4 rounded-lg shadow-sm border border-slate-100 animate-fade-in" {...props} />;
                     }
                   }}
                 >
